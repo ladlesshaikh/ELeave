@@ -215,6 +215,10 @@ app.controller('Ctrl_AppLeave', function ($scope, $http, $timeout, $upload) {
             return false;
         }
 
+        if (dtFrom > dtTo) {
+            alert("From Date can not be more than end date!");
+            return false;
+        }
 
         if ($("#chkSpecialLeave").prop('checked') == true) {
             var isSpecialLeave = 1;
@@ -280,6 +284,10 @@ app.controller('Ctrl_AppLeave', function ($scope, $http, $timeout, $upload) {
                 alert("Please specify the leave is on AM/PM!");
                 return false;
                 isSaveCont = 0;
+            }
+            if (dtFrom != dtTo) {
+                alert("For half day leave from and to date should same!");
+                return false;
             }
         }
         if ($("#checkAM").prop("checked") == true) {

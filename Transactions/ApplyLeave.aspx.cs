@@ -259,7 +259,14 @@ namespace BizHRMS.Transactions
                 //
                 lstROLeave = bus.DuplicateCheck(p_strMemberCode, p_dtFrom, p_dtTo);
 
-                p_fTotalDays = TotalLeaveDaysExcudingHolidays(p_dtFrom, p_dtTo);
+                if (isIsHalfDay == "1")
+                {
+                    p_fTotalDays = 0.5F;
+                }
+                else
+                {
+                    p_fTotalDays = TotalLeaveDaysExcudingHolidays(p_dtFrom, p_dtTo) + 1;
+                }
                 // if (i==1)
                 if (lstROLeave.Count > 0)
                 {
@@ -334,7 +341,7 @@ namespace BizHRMS.Transactions
                 if (lstEmpStatusVO == null)
                 {
                     // ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, p_strRowId, strFlagpercent);
-                  
+
                     ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, p_strRowId, halfdayleavemode);
                 }
                 else
