@@ -1,0 +1,29 @@
+﻿.Receipt {
+    margin-top:70px;
+    width: 100%;
+    padding: 10px;
+    border: #ccc solid 1px;
+    background: #fff;
+}
+.member_name
+{
+    font-size:14px;
+    margin:0px;
+    margin-bottom:3px;
+    color:#000;
+}
+.SleekBottom
+{
+    margin-bottom:3px !important;
+}
+.tblDisplay tr td:first-child
+{
+    width:50px;
+    color:#808080;
+    font-size:14px;
+}
+.sleekTable tr td,.sleekTable tr th
+{
+    font-size:13px !important;
+    padding:2px !important;
+}

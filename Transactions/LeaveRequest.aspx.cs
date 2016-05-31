@@ -1,0 +1,255 @@
+﻿using System.Data;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using ATTNPAY;
+using System.Web.Script;
+using System.Web.Services;
+using ATTNPAY.Core;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using Newtonsoft;
+using Newtonsoft.Json.Linq;
+using System.ComponentModel;
+
+namespace BizHRMS.Transactions
+{
+    public partial class LeaveRequest : System.Web.UI.Page
+    {
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //Fetching the Member code from the Global variable
+            hdfMemCode.Value = GlobalVariable.UserCode;
+            LoadDropDown();
+        }
+        #region Loading the Employee Lst
+        private void LoadDropDown()
+        {
+            string strSQL;
+            DataTable dtData;
+            try
+            {
+                strSQL = "SELECT MEM_CODE,Member_Name FROM MASTER_EMPLOYEE_MAIN WHERE EMP_STATUS='A' ORDER BY MEM_CODE";
+                strSQL = " SELECT MEM_CODE CODE,Member_Name FROM MASTER_EMPLOYEE_MAIN WHERE EMP_STATUS='A' ORDER BY MEM_CODE";
+                dtData = new DataTable();
+                dtData = SQLHelper.ShowRecord(strSQL);
+                DataRow Dr = dtData.NewRow();
+                Dr["CODE"] = "";
+                Dr["Member_Name"] = "Select";
+                dtData.Rows.InsertAt(Dr, 0);
+                if (dtData.Rows.Count > 0)
+                {
+                    ddlMemLst.DataSource = dtData;
+                    ddlMemLst.DataTextField = "Member_Name";
+                    ddlMemLst.DataValueField = "CODE";
+                    ddlMemLst.DataBind();
+
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+        #endregion
+
+        [WebMethod]
+        #region Fetch all leave
+        public static List<LeaveApplicationVO> getAllLeaveDetails(string memCode)
+        {
+            string branchCode = GlobalVariable.BarnchCode;
+            LeaveApplicationBUS LAB = new LeaveApplicationBUS();
+            List<LeaveApplicationVO> lstLeaveApp = new List<LeaveApplicationVO>();
+            lstLeaveApp = LAB.getLeaveApplicationListByRO(memCode,branchCode);
+            return lstLeaveApp;
+        }
+        #endregion
+
+        [WebMethod]
+        #region Fetch History Details
+        public static List<LeaveApplicationVO> getHistoryLeaveDetails(string mem_code)
+        {
+            LeaveApplicationBUS LAB = new LeaveApplicationBUS();
+            List<LeaveApplicationVO> lstLeaveApp = new List<LeaveApplicationVO>();
+            lstLeaveApp = LAB.getLeaveApplicationListAll(mem_code);
+            return lstLeaveApp;
+        }
+        #endregion
+
+        [WebMethod]
+        #region Update Leave Status
+        public static bool UpdateLeaveStatus(string StatusId, string RowId)
+        {
+            string Edit_By = GlobalVariable.UserCode;
+            LeaveApplicationBUS LAB = new LeaveApplicationBUS();
+            try
+            {
+               bool ret = LAB.UpdateLeaveStatus(StatusId, RowId, Edit_By);
+                SendEmail(RowId, "A", "");            
+                return ret;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+        }
+        #endregion
+        public static bool SendEmail(string RowId, string leavestatusid, string Reason)
+        {
+
+
+            List<string> tolist = new List<string>();
+            List<string> attachLst = new List<string>();
+            List<string> cclst = new List<string>();
+            List<LeaveApplicationVO> LeaveDetail = new List<LeaveApplicationVO>();
+            EmailVO emailH = new EmailVO();
+            EmailSettingsVO emailD = new EmailSettingsVO();
+            EmailSettingsBUS esBUS = new EmailSettingsBUS();
+            LeaveApplicationBUS laBUS = new LeaveApplicationBUS();
+            List<RoMemberDetlsVO> lstRO = new List<RoMemberDetlsVO>();
+            List<RoMemberDetlsVO> lstROLeave = new List<RoMemberDetlsVO>();
+            int p_fTotalDays;
+            DocsBUS busd = new DocsBUS();
+            string EmailBody = "";
+            var ApprMemCode = "";
+            var employeename = "";
+            string strMemberCode = "";
+            DateTime p_dtFrom;
+            DateTime p_dtTo;
+            string p_strReason = "";
+            string p_strRemarks = "";
+            string ApproverName = "";
+
+            LeaveDetail = laBUS.getLeaveDetailsByRowId(RowId);
+            p_fTotalDays = Convert.ToInt16(LeaveDetail[0].TOT_DAY);
+            strMemberCode = LeaveDetail[0].Member_Name;
+            p_dtFrom = Convert.ToDateTime(LeaveDetail[0].FROM_DATE);
+
+            p_dtTo = Convert.ToDateTime(LeaveDetail[0].TO_DATE);
+            p_strReason = Convert.ToString(LeaveDetail[0].REASON);
+            p_strRemarks = Convert.ToString(LeaveDetail[0].RO_REMARKS);
+
+            employeename = Convert.ToString(LeaveDetail[0].MEM_CODE);
+
+            emailH.Subject = "Leave Application";
+            EmailBody += "Dear <b>" + employeename + ',' + "</b></h1><br>";
+            //  EmailBody += "Leave Application has been Approved by <b>" + ApproverName + "."  + "</b></h1><br>";
+            if (leavestatusid == "R")
+            { 
+                EmailBody += "Leave Application has been Rejected<b>" + "." + "</b></h1><br><br>";
+                EmailBody += "<br><b>Rejection Remarks: <i>" + Reason + "</i></b>";
+            }
+            else
+            {
+                 EmailBody += "Leave Application has been Approved<b>" + "." + "</b></h1><br>";
+            }
+            EmailBody += "<br>Leave  from " + p_dtFrom.ToString("dd/MMM/yyyy") + " to " + p_dtTo.ToString("dd/MMM/yyyy") + "<br>No. Of Days (" + p_fTotalDays + ")";
+            EmailBody += "<br><b>Remarks: <i>" + p_strReason + "</i></b>";
+            EmailBody += "<br><hr>";
+            emailH.Body = EmailBody;
+            //3.To List
+            EmployeeBUS emBUS = new EmployeeBUS();
+            //Employee Email
+            tolist = emBUS.GetROAppDetEmail(strMemberCode);
+
+            cclst = emBUS.GetROCCtEmail(strMemberCode, ApprMemCode);
+
+            emailH.EmailToList = tolist;
+
+            if (cclst.Count == 0)
+                emailH.CCList = tolist; //cclst;
+            else
+                emailH.CCList = cclst;
+            //5.Mail Header Details
+            EmailCCDetlsBUS emailCCBUS = new EmailCCDetlsBUS();
+            // emailH.CCList = emailCCBUS.getEmailCCList(strMemberCode, "");
+
+
+            BindingList<EmailSettingsVO> emailSettings = esBUS.getEmailSettingsBindingList();
+            emailH.IsHTML = 1;
+            emailD.Is_Ssl = 0;
+            emailD.Smtp_EmailFrom = emailSettings[0].Smtp_Uid;
+            emailD.Smtp_Port = emailSettings[0].Smtp_Port;
+            emailD.Smtp_Pwd = emailSettings[0].Smtp_Pwd;
+            emailD.Smtp_Ip = emailSettings[0].Smtp_Ip;
+
+            //Send mail
+            esBUS.SendMail(emailH, emailD, "0", emailD.Smtp_EmailFrom);
+            return true;
+        }
+        [WebMethod]
+        #region Leave Rejection
+        public static bool RejectLeave(string reason, string RowId)
+        {
+            try
+            {
+                string Edit_By = GlobalVariable.UserCode;
+                LeaveApplicationBUS LAB = new LeaveApplicationBUS();
+                bool ret = true;
+               //  ret = LAB.RejectLeave(reason, RowId,Edit_By);
+                SendEmail(RowId, "R",  reason);
+                return ret;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+        }
+        #endregion
+
+        [WebMethod]
+        #region Transfer Request
+        public static bool TransferRequest(string MemCode, string AuthType, string remarks, string row_id, string activeRO)
+        {
+            try
+            {
+                EmployeeBUS bus = new EmployeeBUS();
+                LeaveApplicationBUS LAB = new LeaveApplicationBUS();
+                List<KeyValue> lstRO = new List<KeyValue>();
+                LoginUserVO user = new LoginUserVO();
+                string Branch_Code = GlobalVariable.BarnchCode;
+                string Edit_By = GlobalVariable.UserCode;
+                string ROCode="";
+                if (AuthType=="1")
+                {
+                    //lstRO = bus.getEmployeesROs(MemCode);
+                    //if(lstRO.Count==0)
+                    //{
+                    //    return false;
+                    //}
+                    //else
+                    //{
+                    //    ROCode = lstRO[0].ValueMember;
+                    //}
+                    ROCode = activeRO;
+                }
+                else if(AuthType=="2")
+                {
+                    user = bus.GetAdminUser(Branch_Code);
+                    ROCode = Convert.ToString(user.MEM_CODE);
+                }
+                return(LAB.TransferLeaveBUS(ROCode, remarks, row_id,Edit_By));
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        #endregion
+
+
+        [WebMethod]
+        public static List<RoMemberInfoVO> GetReportingOfficers(string memCode)
+        {
+            EmployeeBUS bus = new EmployeeBUS();
+            try
+            {
+                return (bus.getRoMemberInfo(memCode));
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
+        }
+    }
+}

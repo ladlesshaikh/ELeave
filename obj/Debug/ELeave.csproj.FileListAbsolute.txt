@@ -1,0 +1,26 @@
+D:\zan\Projects\HRM May\ELeave\bin\ApplicationInsights.config
+D:\zan\Projects\HRM May\ELeave\bin\BizHRMS.dll.config
+D:\zan\Projects\HRM May\ELeave\bin\BizHRMS.dll
+D:\zan\Projects\HRM May\ELeave\bin\BizHRMS.pdb
+D:\zan\Projects\HRM May\ELeave\bin\NCalc.dll
+D:\zan\Projects\HRM May\ELeave\bin\NSubstitute.dll
+D:\zan\Projects\HRM May\ELeave\bin\ObjectMapper.dll
+D:\zan\Projects\HRM May\ELeave\bin\SimpleExpressionEvaluator.dll
+D:\zan\Projects\HRM May\ELeave\obj\Debug\ELeave.csprojResolveAssemblyReference.cache
+D:\zan\Projects\HRM May\ELeave\obj\Debug\Interop.WinHttp.dll
+D:\zan\Projects\HRM May\ELeave\obj\Debug\ELeave.csproj.ResolveComReference.cache
+D:\zan\Projects\HRM May\ELeave\obj\Debug\BizHRMS.dll
+D:\zan\Projects\HRM May\ELeave\obj\Debug\BizHRMS.pdb
+D:\Data\Projects\Pilot\ELeave\ELeave\bin\ApplicationInsights.config
+D:\Data\Projects\Pilot\ELeave\ELeave\bin\BizHRMS.dll.config
+D:\Data\Projects\Pilot\ELeave\ELeave\bin\BizHRMS.dll
+D:\Data\Projects\Pilot\ELeave\ELeave\bin\BizHRMS.pdb
+D:\Data\Projects\Pilot\ELeave\ELeave\bin\NCalc.dll
+D:\Data\Projects\Pilot\ELeave\ELeave\bin\NSubstitute.dll
+D:\Data\Projects\Pilot\ELeave\ELeave\bin\ObjectMapper.dll
+D:\Data\Projects\Pilot\ELeave\ELeave\bin\SimpleExpressionEvaluator.dll
+D:\Data\Projects\Pilot\ELeave\ELeave\obj\Debug\ELeave.csprojResolveAssemblyReference.cache
+D:\Data\Projects\Pilot\ELeave\ELeave\obj\Debug\Interop.WinHttp.dll
+D:\Data\Projects\Pilot\ELeave\ELeave\obj\Debug\ELeave.csproj.ResolveComReference.cache
+D:\Data\Projects\Pilot\ELeave\ELeave\obj\Debug\BizHRMS.dll
+D:\Data\Projects\Pilot\ELeave\ELeave\obj\Debug\BizHRMS.pdb

@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>P:\published</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AmmendClock.aspx">
+      <publishTime>02/13/2016 16:05:14</publishTime>
+    </File>
+    <File Include="AmmendClockByEmployee.aspx">
+      <publishTime>02/14/2016 21:56:23</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>02/13/2016 16:04:52</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>02/13/2016 16:04:52</publishTime>
+    </File>
+    <File Include="bin/BizHRMS.dll">
+      <publishTime>03/02/2016 07:39:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>02/13/2016 16:20:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>02/13/2016 16:21:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>02/13/2016 16:20:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>02/13/2016 16:21:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>02/13/2016 16:19:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>02/13/2016 16:19:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>02/13/2016 16:20:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>02/13/2016 16:20:36</publishTime>
+    </File>
+    <File Include="bin/NCalc.dll">
+      <publishTime>09/20/2011 10:54:36</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/20/2016 13:32:33</publishTime>
+    </File>
+    <File Include="bin/NSubstitute.dll">
+      <publishTime>11/05/2015 21:40:11</publishTime>
+    </File>
+    <File Include="bin/ObjectMapper.dll">
+      <publishTime>02/17/2016 23:57:07</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>02/13/2016 16:19:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>02/13/2016 16:19:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>02/13/2016 16:19:50</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>02/13/2016 16:19:50</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>02/13/2016 16:19:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>02/13/2016 16:19:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>02/13/2016 16:20:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>02/13/2016 16:20:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>02/13/2016 16:20:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>02/13/2016 16:19:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>02/13/2016 16:19:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>02/13/2016 16:19:58</publishTime>
+    </File>
+    <File Include="bin/SimpleExpressionEvaluator.dll">
+      <publishTime>11/12/2014 12:00:14</publishTime>
+    </File>
+    <File Include="choosen/chosen-sprite.png">
+      <publishTime>02/13/2016 16:05:24</publishTime>
+    </File>
+    <File Include="choosen/chosen.css">
+      <publishTime>02/13/2016 16:05:26</publishTime>
+    </File>
+    <File Include="choosen/chosen.min.js">
+      <publishTime>02/13/2016 16:05:28</publishTime>
+    </File>
+    <File Include="choosen/mootools-more-1.4.0.1.js">
+      <publishTime>02/13/2016 16:05:26</publishTime>
+    </File>
+    <File Include="css/custom.css">
+      <publishTime>02/21/2016 16:43:22</publishTime>
+    </File>
+    <File Include="css/metro-icons.min.css">
+      <publishTime>02/13/2016 16:10:34</publishTime>
+    </File>
+    <File Include="css/metro-responsive.min.css">
+      <publishTime>02/13/2016 16:10:32</publishTime>
+    </File>
+    <File Include="css/metro-rtl.min.css">
+      <publishTime>02/13/2016 16:10:30</publishTime>
+    </File>
+    <File Include="css/metro-schemes.min.css">
+      <publishTime>02/13/2016 16:10:30</publishTime>
+    </File>
+    <File Include="css/metro.min.css">
+      <publishTime>02/13/2016 16:10:34</publishTime>
+    </File>
+    <File Include="css/Payslip.css">
+      <publishTime>03/02/2016 06:21:52</publishTime>
+    </File>
+    <File Include="DataTable/angular-datatables.directive.js">
+      <publishTime>01/22/2016 08:05:14</publishTime>
+    </File>
+    <File Include="DataTable/angular-datatables.factory.js">
+      <publishTime>01/22/2016 08:05:14</publishTime>
+    </File>
+    <File Include="DataTable/angular-datatables.instances.js">
+      <publishTime>01/22/2016 08:05:14</publishTime>
+    </File>
+    <File Include="DataTable/angular-datatables.js">
+      <publishTime>01/22/2016 08:05:14</publishTime>
+    </File>
+    <File Include="DataTable/angular-datatables.options.js">
+      <publishTime>01/22/2016 08:05:14</publishTime>
+    </File>
+    <File Include="DataTable/angular-datatables.renderer.js">
+      <publishTime>01/22/2016 08:05:14</publishTime>
+    </File>
+    <File Include="DataTable/angular-datatables.util.js">
+      <publishTime>01/22/2016 08:05:14</publishTime>
+    </File>
+    <File Include="DataTable/datatable.css">
+      <publishTime>02/13/2016 16:05:14</publishTime>
+    </File>
+    <File Include="DataTable/jquery.Datatable.min.js">
+      <publishTime>02/13/2016 16:05:12</publishTime>
+    </File>
+    <File Include="dll/NCalc.dll">
+      <publishTime>09/20/2011 10:54:36</publishTime>
+    </File>
+    <File Include="dll/NSubstitute.dll">
+      <publishTime>11/05/2015 21:40:11</publishTime>
+    </File>
+    <File Include="dll/ObjectMapper.dll">
+      <publishTime>02/17/2016 23:57:07</publishTime>
+    </File>
+    <File Include="dll/SimpleExpressionEvaluator.dll">
+      <publishTime>11/12/2014 12:00:14</publishTime>
+    </File>
+    <File Include="fonts/metro.eot">
+      <publishTime>02/13/2016 16:10:42</publishTime>
+    </File>
+    <File Include="fonts/metro.svg">
+      <publishTime>02/13/2016 16:10:36</publishTime>
+    </File>
+    <File Include="fonts/metro.ttf">
+      <publishTime>02/13/2016 16:10:40</publishTime>
+    </File>
+    <File Include="fonts/metro.woff">
+      <publishTime>02/13/2016 16:10:38</publishTime>
+    </File>
+    <File Include="fonts/selection.json">
+      <publishTime>02/13/2016 16:10:38</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/13/2016 16:09:06</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>02/21/2016 12:37:20</publishTime>
+    </File>
+    <File Include="images/accepted.png">
+      <publishTime>02/28/2016 15:02:15</publishTime>
+    </File>
+    <File Include="images/cancelled.png">
+      <publishTime>02/28/2016 15:06:32</publishTime>
+    </File>
+    <File Include="images/LoginPageSplash.PNG">
+      <publishTime>02/13/2016 16:03:34</publishTime>
+    </File>
+    <File Include="images/logout.png">
+      <publishTime>02/13/2016 16:11:56</publishTime>
+    </File>
+    <File Include="images/MasterLogo.PNG">
+      <publishTime>02/13/2016 16:03:38</publishTime>
+    </File>
+    <File Include="images/PunchesLarge.png">
+      <publishTime>02/13/2016 16:03:30</publishTime>
+    </File>
+    <File Include="images/rejected.png">
+      <publishTime>02/28/2016 15:03:44</publishTime>
+    </File>
+    <File Include="images/ReviewLarge.png">
+      <publishTime>02/13/2016 16:03:36</publishTime>
+    </File>
+    <File Include="images/submitted.png">
+      <publishTime>02/28/2016 15:05:27</publishTime>
+    </File>
+    <File Include="images/TimeLarge.png">
+      <publishTime>02/13/2016 16:03:34</publishTime>
+    </File>
+    <File Include="JQUERY TimePicker/timepcker.js">
+      <publishTime>02/16/2016 05:09:34</publishTime>
+    </File>
+    <File Include="JQUERY TimePicker/timepicker.css">
+      <publishTime>02/16/2016 05:10:10</publishTime>
+    </File>
+    <File Include="js/AmmentClockByDate.js">
+      <publishTime>02/21/2016 11:45:11</publishTime>
+    </File>
+    <File Include="js/AmmentClockByEmpJS.js">
+      <publishTime>03/01/2016 21:34:12</publishTime>
+    </File>
+    <File Include="js/angular-datatables.js">
+      <publishTime>01/22/2016 08:05:14</publishTime>
+    </File>
+    <File Include="js/angular.min.js">
+      <publishTime>02/13/2016 16:10:18</publishTime>
+    </File>
+    <File Include="js/BlockUI.js">
+      <publishTime>02/21/2016 11:12:57</publishTime>
+    </File>
+    <File Include="js/jquery.min.js">
+      <publishTime>02/13/2016 16:10:16</publishTime>
+    </File>
+    <File Include="js/LeaveApplication.js">
+      <publishTime>02/28/2016 16:02:36</publishTime>
+    </File>
+    <File Include="js/LeaveRequest.js">
+      <publishTime>02/29/2016 06:16:21</publishTime>
+    </File>
+    <File Include="js/mdlFiles.js">
+      <publishTime>03/02/2016 07:04:17</publishTime>
+    </File>
+    <File Include="js/mdl_AmmendClockByDate.js">
+      <publishTime>02/27/2016 06:52:11</publishTime>
+    </File>
+    <File Include="js/mdl_LeaveApplication.js">
+      <publishTime>02/28/2016 20:00:43</publishTime>
+    </File>
+    <File Include="js/mdl_LeaveRequest.js">
+      <publishTime>02/29/2016 05:55:53</publishTime>
+    </File>
+    <File Include="js/mdl_PaySlip.js">
+      <publishTime>03/02/2016 06:23:50</publishTime>
+    </File>
+    <File Include="js/metro.min.js">
+      <publishTime>02/13/2016 16:10:16</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>03/01/2016 21:26:57</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/20/2016 13:32:37</publishTime>
+    </File>
+    <File Include="scripts/ai.0.15.0-build58334.js">
+      <publishTime>02/13/2016 16:04:24</publishTime>
+    </File>
+    <File Include="scripts/ai.0.15.0-build58334.min.js">
+      <publishTime>02/13/2016 16:04:26</publishTime>
+    </File>
+    <File Include="Selectator/Css/fm.selectator.jquery.css">
+      <publishTime>02/14/2016 14:35:37</publishTime>
+    </File>
+    <File Include="Selectator/Js/fm.selectator.jquery.js">
+      <publishTime>01/12/2016 02:50:08</publishTime>
+    </File>
+    <File Include="TimePicker/jquery.datetimepicker.css">
+      <publishTime>02/13/2016 16:09:08</publishTime>
+    </File>
+    <File Include="TimePicker/jquery.datetimepicker.full.min.js">
+      <publishTime>02/13/2016 16:09:08</publishTime>
+    </File>
+    <File Include="TimePicker/jquery.datetimepicker.min.js">
+      <publishTime>02/13/2016 16:09:10</publishTime>
+    </File>
+    <File Include="Transactions/AmmenTClockByDate.aspx">
+      <publishTime>02/21/2016 11:45:50</publishTime>
+    </File>
+    <File Include="Transactions/AmmentClockByEmp.aspx">
+      <publishTime>03/01/2016 21:37:18</publishTime>
+    </File>
+    <File Include="Transactions/Home.aspx">
+      <publishTime>02/21/2016 12:42:26</publishTime>
+    </File>
+    <File Include="Transactions/Leave/ApplyLeave.aspx">
+      <publishTime>03/02/2016 06:51:31</publishTime>
+    </File>
+    <File Include="Transactions/LeaveRequest.aspx">
+      <publishTime>02/29/2016 05:33:23</publishTime>
+    </File>
+    <File Include="Transactions/PaySlip.aspx">
+      <publishTime>03/02/2016 06:22:54</publishTime>
+    </File>
+    <File Include="UserControls/Header.ascx">
+      <publishTime>02/13/2016 16:10:24</publishTime>
+    </File>
+    <File Include="UserControls/Navigation.ascx">
+      <publishTime>03/02/2016 07:07:01</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/02/2016 07:40:02</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

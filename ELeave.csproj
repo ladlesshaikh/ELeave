@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55AECC39-527B-410C-8EB6-A0E758105B53}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BizHRMS</RootNamespace>
+    <AssemblyName>BizHRMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.8.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.8\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.8.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.8\lib\itextsharp.xmlworker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.0.1011, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=1.2.3.246, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.2.3.490, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NSubstitute, Version=1.4.3.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectMapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\manu-afi\new\PAYBIZPRO\dll\ObjectMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleExpressionEvaluator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\SimpleExpressionEvaluator.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AmmendClock.aspx" />
+    <Content Include="AmmendClockByEmployee.aspx" />
+    <Content Include="choosen\chosen-sprite.png" />
+    <Content Include="choosen\chosen.css" />
+    <Content Include="choosen\chosen.min.js" />
+    <Content Include="choosen\mootools-more-1.4.0.1.js" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\Payslip.css" />
+    <Content Include="DataTable\angular-datatables.directive.js" />
+    <Content Include="DataTable\angular-datatables.factory.js" />
+    <Content Include="DataTable\angular-datatables.instances.js" />
+    <Content Include="DataTable\angular-datatables.js" />
+    <Content Include="DataTable\angular-datatables.options.js" />
+    <Content Include="DataTable\angular-datatables.renderer.js" />
+    <Content Include="DataTable\angular-datatables.util.js" />
+    <Content Include="DataTable\datatable.css" />
+    <Content Include="DataTable\jquery.Datatable.min.js" />
+    <Content Include="dll\NCalc.dll" />
+    <Content Include="dll\NSubstitute.dll" />
+    <Content Include="dll\ObjectMapper.dll" />
+    <Content Include="dll\SimpleExpressionEvaluator.dll" />
+    <Content Include="files\images.png" />
+    <Content Include="files\logo.jpg" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\accepted.png" />
+    <Content Include="images\cancelled.png" />
+    <Content Include="images\logout.png" />
+    <Content Include="images\PunchesLarge.png" />
+    <Content Include="images\rejected.png" />
+    <Content Include="images\ReviewLarge.png" />
+    <Content Include="images\submitted.png" />
+    <Content Include="images\TimeLarge.png" />
+    <Content Include="images\transferred.PNG" />
+    <Content Include="JQUERY TimePicker\timepcker.js" />
+    <Content Include="JQUERY TimePicker\timepicker.css" />
+    <Content Include="js\AmmentClockByDate.js" />
+    <Content Include="js\AmmentClockByEmpJS.js" />
+    <Content Include="js\angular-datatables.js" />
+    <Content Include="js\angular.min.js" />
+    <Content Include="js\BlockUI.js" />
+    <Content Include="js\BulkClocking.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jqueryui.js" />
+    <Content Include="js\LeaveApplication.js" />
+    <Content Include="js\LeaveRequest.js" />
+    <Content Include="js\mdlFiles.js" />
+    <Content Include="js\mdl_AmmendClockByDate.js" />
+    <Content Include="js\mdl_BulkClocking.js" />
+    <Content Include="js\mdl_LeaveApplication.js" />
+    <Content Include="js\mdl_LeaveRequest.js" />
+    <Content Include="js\mdl_PaySlip.js" />
+    <Content Include="js\script_attach_docs\angular-cookies.js" />
+    <Content Include="js\script_attach_docs\angular-resource.js" />
+    <Content Include="js\script_attach_docs\angular-route.js" />
+    <Content Include="js\script_attach_docs\angular-sanitize.js" />
+    <Content Include="js\script_attach_docs\vendor\angular-file-upload-shim.js" />
+    <Content Include="js\script_attach_docs\vendor\angular-file-upload.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\metro.eot" />
+    <Content Include="fonts\metro.ttf" />
+    <Content Include="fonts\metro.woff" />
+    <Content Include="fonts\selection.json" />
+    <Content Include="files\GenerateHTMLTOPDF.pdf" />
+    <None Include="Properties\PublishProfiles\pub.pubxml" />
+    <Content Include="Transactions\ApplyLeave.aspx" />
+    <Content Include="Transactions\files\GenerateHTMLTOPDF.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\metro-icons.min.css" />
+    <Content Include="css\metro-responsive.min.css" />
+    <Content Include="css\metro-rtl.min.css" />
+    <Content Include="css\metro-schemes.min.css" />
+    <Content Include="css\metro.min.css" />
+    <Content Include="fonts\metro.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\LoginPageSplash.PNG" />
+    <Content Include="images\MasterLogo.PNG" />
+    <Content Include="js\metro.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="scripts\ai.0.15.0-build58334.js" />
+    <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Selectator\Css\fm.selectator.jquery.css" />
+    <Content Include="Selectator\Js\fm.selectator.jquery.js" />
+    <Content Include="TimePicker\jquery.datetimepicker.css" />
+    <Content Include="TimePicker\jquery.datetimepicker.full.min.js" />
+    <Content Include="TimePicker\jquery.datetimepicker.min.js" />
+    <Content Include="Transactions\AmmenTClockByDate.aspx" />
+    <Content Include="Transactions\AmmentClockByEmp.aspx" />
+    <Content Include="Transactions\BulkClocking.aspx" />
+    <Content Include="Transactions\files\images.png" />
+    <Content Include="Transactions\files\logo.jpg" />
+    <Content Include="Transactions\Home.aspx" />
+    <Content Include="Transactions\LeaveRequest.aspx" />
+    <Content Include="Transactions\Leave\ApplyLeave.aspx" />
+    <Content Include="Transactions\PaySlip.aspx" />
+    <Content Include="UserControls\Header.ascx" />
+    <Content Include="UserControls\Navigation.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmmendClock.aspx.cs">
+      <DependentUpon>AmmendClock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AmmendClock.aspx.designer.cs">
+      <DependentUpon>AmmendClock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AmmendClockByEmployee.aspx.cs">
+      <DependentUpon>AmmendClockByEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AmmendClockByEmployee.aspx.designer.cs">
+      <DependentUpon>AmmendClockByEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Data\BUS\attendanceBUS.cs" />
+    <Compile Include="App_Data\BUS\attnClockAmendmentBUS.cs" />
+    <Compile Include="App_Data\BUS\bankBUS.cs" />
+    <Compile Include="App_Data\BUS\BindingtList.cs" />
+    <Compile Include="App_Data\BUS\branchBUS.cs" />
+    <Compile Include="App_Data\BUS\BulkClockingListBUS.cs" />
+    <Compile Include="App_Data\BUS\canteenBUS.cs" />
+    <Compile Include="App_Data\BUS\canteenGroupBUS.cs" />
+    <Compile Include="App_Data\BUS\companyBUS.cs" />
+    <Compile Include="App_Data\BUS\cpfAgeGroupBUS.cs" />
+    <Compile Include="App_Data\BUS\cpfConfigBUS.cs" />
+    <Compile Include="App_Data\BUS\cpfGroupBUS.cs" />
+    <Compile Include="App_Data\BUS\cpfSalGroupBUS.cs" />
+    <Compile Include="App_Data\BUS\cpfSettingsBUS.cs" />
+    <Compile Include="App_Data\BUS\departmentBUS.cs" />
+    <Compile Include="App_Data\BUS\designationBUS.cs" />
+    <Compile Include="App_Data\BUS\deviceBUS.cs" />
+    <Compile Include="App_Data\BUS\DocsBUS.cs" />
+    <Compile Include="App_Data\BUS\documentBUS.cs" />
+    <Compile Include="App_Data\BUS\documentCategoryBUS.cs" />
+    <Compile Include="App_Data\BUS\earningDeductionBUS.cs" />
+    <Compile Include="App_Data\BUS\emailCCDetlsBUS.cs" />
+    <Compile Include="App_Data\BUS\emailCCGroupBUS.cs" />
+    <Compile Include="App_Data\BUS\emailSettingsBUS.cs" />
+    <Compile Include="App_Data\BUS\employeeBUS.cs" />
+    <Compile Include="App_Data\BUS\employeeCategoryBUS.cs" />
+    <Compile Include="App_Data\BUS\employeeGradeBUS.cs" />
+    <Compile Include="App_Data\BUS\employeeTypeBUS.cs" />
+    <Compile Include="App_Data\BUS\fpdeviceBUS.cs" />
+    <Compile Include="App_Data\BUS\GeneratePaySlipBUS.cs" />
+    <Compile Include="App_Data\BUS\holidayBUS.cs" />
+    <Compile Include="App_Data\BUS\leaveApplicationBUS.cs" />
+    <Compile Include="App_Data\BUS\LeaveHistoryBUS.cs" />
+    <Compile Include="App_Data\BUS\leaveTypeBUS.cs" />
+    <Compile Include="App_Data\BUS\loanBUS.cs" />
+    <Compile Include="App_Data\BUS\lobBUS.cs" />
+    <Compile Include="App_Data\BUS\loginUserBUS.cs" />
+    <Compile Include="App_Data\BUS\maritalStatusBUS.cs" />
+    <Compile Include="App_Data\BUS\masterFPBackupBUS.cs" />
+    <Compile Include="App_Data\BUS\miscEarningDeductionBUS.cs" />
+    <Compile Include="App_Data\BUS\orgMapBUS.cs" />
+    <Compile Include="App_Data\BUS\overtimeBUS.cs" />
+    <Compile Include="App_Data\BUS\overtimeTBUS.cs" />
+    <Compile Include="App_Data\BUS\paybasisBUS.cs" />
+    <Compile Include="App_Data\BUS\paymentModeBUS.cs" />
+    <Compile Include="App_Data\BUS\payslipBUS.cs" />
+    <Compile Include="App_Data\BUS\payslipListBUS.cs" />
+    <Compile Include="App_Data\BUS\policyGroupBUS.cs" />
+    <Compile Include="App_Data\BUS\projectBUS.cs" />
+    <Compile Include="App_Data\BUS\projectGroupBUS.cs" />
+    <Compile Include="App_Data\BUS\projectTeamsDetlsBUS.cs" />
+    <Compile Include="App_Data\BUS\projectTeamsStatusBUS.cs" />
+    <Compile Include="App_Data\BUS\prYearGroupBUS.cs" />
+    <Compile Include="App_Data\BUS\relationshipBUS.cs" />
+    <Compile Include="App_Data\BUS\residenceStatusBUS.cs" />
+    <Compile Include="App_Data\BUS\roleManagerBUS.cs" />
+    <Compile Include="App_Data\BUS\roMemberDetlsBUS.cs" />
+    <Compile Include="App_Data\BUS\ruleCategoryBUS.cs" />
+    <Compile Include="App_Data\BUS\ruleInfoTypeBUS.cs" />
+    <Compile Include="App_Data\BUS\ruleManagerBUS.cs" />
+    <Compile Include="App_Data\BUS\rulePropertyInfoBUS.cs" />
+    <Compile Include="App_Data\BUS\rulesBUS.cs" />
+    <Compile Include="App_Data\BUS\salaryEarningBUS.cs" />
+    <Compile Include="App_Data\BUS\shiftBUS.cs" />
+    <Compile Include="App_Data\BUS\shiftGroupBUS.cs" />
+    <Compile Include="App_Data\BUS\shiftGroupDetlsBUS.cs" />
+    <Compile Include="App_Data\BUS\shiftRosterBUS.cs" />
+    <Compile Include="App_Data\BUS\taxSlabBUS.cs" />
+    <Compile Include="App_Data\BUS\tourApplicationBUS.cs" />
+    <Compile Include="App_Data\BUS\tourBUS.cs" />
+    <Compile Include="App_Data\BUS\trainingBUS.cs" />
+    <Compile Include="App_Data\BUS\transPayAttendanceBUS.cs" />
+    <Compile Include="App_Data\BUS\userAuthBUS.cs" />
+    <Compile Include="App_Data\BUS\userBUS.cs" />
+    <Compile Include="App_Data\BUS\yearBUS.cs" />
+    <Compile Include="App_Data\BUS\yearMainBUS.cs" />
+    <Compile Include="App_Data\DAO\attendanceDAO.cs" />
+    <Compile Include="App_Data\DAO\attnClockAmendmentDAO.cs" />
+    <Compile Include="App_Data\DAO\bankDAO.cs" />
+    <Compile Include="App_Data\DAO\branchDAO.cs" />
+    <Compile Include="App_Data\DAO\bulkClockingListDAO.cs" />
+    <Compile Include="App_Data\DAO\canteenDAO.cs" />
+    <Compile Include="App_Data\DAO\canteenGroupDAO.cs" />
+    <Compile Include="App_Data\DAO\companyDAO.cs" />
+    <Compile Include="App_Data\DAO\cpfAgeGroupDAO.cs" />
+    <Compile Include="App_Data\DAO\cpfConfigDAO.cs" />
+    <Compile Include="App_Data\DAO\cpfGroupDAO.cs" />
+    <Compile Include="App_Data\DAO\cpfSalGroupDAO.cs" />
+    <Compile Include="App_Data\DAO\cpfSettingsDAO.cs" />
+    <Compile Include="App_Data\DAO\departmentDAO.cs" />
+    <Compile Include="App_Data\DAO\designationDAO.cs" />
+    <Compile Include="App_Data\DAO\deviceDAO.cs" />
+    <Compile Include="App_Data\DAO\DocsDAO.cs" />
+    <Compile Include="App_Data\DAO\documentCategoryDAO.cs" />
+    <Compile Include="App_Data\DAO\documentDAO.cs" />
+    <Compile Include="App_Data\DAO\earningDeductionDAO.cs" />
+    <Compile Include="App_Data\DAO\emailCCDetlsDAO.cs" />
+    <Compile Include="App_Data\DAO\emailCCGroupDAO.cs" />
+    <Compile Include="App_Data\DAO\emailSettingsDAO.cs" />
+    <Compile Include="App_Data\DAO\employeeCategoryDAO.cs" />
+    <Compile Include="App_Data\DAO\employeeGradeDAO.cs" />
+    <Compile Include="App_Data\DAO\employeerDAO.cs" />
+    <Compile Include="App_Data\DAO\employeeTypeDAO.cs" />
+    <Compile Include="App_Data\DAO\FPDeviceDAO.cs" />
+    <Compile Include="App_Data\DAO\GeneratePDF.cs" />
+    <Compile Include="App_Data\DAO\holidyDAO.cs" />
+    <Compile Include="App_Data\DAO\leaveApplicationDAO.cs" />
+    <Compile Include="App_Data\DAO\LeaveHistoryDAO.cs" />
+    <Compile Include="App_Data\DAO\leaveTypeDAO.cs" />
+    <Compile Include="App_Data\DAO\loanDAO.cs" />
+    <Compile Include="App_Data\DAO\lobDAO.cs" />
+    <Compile Include="App_Data\DAO\loginUserDAO.cs" />
+    <Compile Include="App_Data\DAO\maritalStatusDAO.cs" />
+    <Compile Include="App_Data\DAO\masterFpBackupDAO.cs" />
+    <Compile Include="App_Data\DAO\masterFpBackupDetDAO.cs" />
+    <Compile Include="App_Data\DAO\miscEarningDeductionDAO.cs" />
+    <Compile Include="App_Data\DAO\orgMapDAO.cs" />
+    <Compile Include="App_Data\DAO\overtimeDAO.cs" />
+    <Compile Include="App_Data\DAO\overtimeTDAO.cs" />
+    <Compile Include="App_Data\DAO\paybasisDAO.cs" />
+    <Compile Include="App_Data\DAO\paymentModeDAO.cs" />
+    <Compile Include="App_Data\DAO\payslipDAO.cs" />
+    <Compile Include="App_Data\DAO\payslipListDAO.cs" />
+    <Compile Include="App_Data\DAO\payYearMonthDAO.cs" />
+    <Compile Include="App_Data\DAO\policyGroupDAO.cs" />
+    <Compile Include="App_Data\DAO\processOTDAO.cs" />
+    <Compile Include="App_Data\DAO\projectDAO.cs" />
+    <Compile Include="App_Data\DAO\projectGroupDAO.cs" />
+    <Compile Include="App_Data\DAO\projectTeamsDtlsDAO.cs" />
+    <Compile Include="App_Data\DAO\projectTeamStatusDAO.cs" />
+    <Compile Include="App_Data\DAO\prYearGroupDAO.cs" />
+    <Compile Include="App_Data\DAO\relationshipDAO.cs" />
+    <Compile Include="App_Data\DAO\residenceStatusDAO.cs" />
+    <Compile Include="App_Data\DAO\roleManagerDAO.cs" />
+    <Compile Include="App_Data\DAO\roMemberDtlsDAO.cs" />
+    <Compile Include="App_Data\DAO\ruleCategoryDAO.cs" />
+    <Compile Include="App_Data\DAO\ruleInfoTypeDAO.cs" />
+    <Compile Include="App_Data\DAO\rulePropertyInfoDAO.cs" />
+    <Compile Include="App_Data\DAO\rulesDAO.cs" />
+    <Compile Include="App_Data\DAO\salaryEarningDAO.cs" />
+    <Compile Include="App_Data\DAO\shiftDAO.cs" />
+    <Compile Include="App_Data\DAO\shiftGroupDAO.cs" />
+    <Compile Include="App_Data\DAO\shiftGroupDtlsDAO.cs" />
+    <Compile Include="App_Data\DAO\shiftRosterDAO.cs" />
+    <Compile Include="App_Data\DAO\taxSlabDAO.cs" />
+    <Compile Include="App_Data\DAO\tourApplicationDAO.cs" />
+    <Compile Include="App_Data\DAO\tourDAO.cs" />
+    <Compile Include="App_Data\DAO\trainingDAO.cs" />
+    <Compile Include="App_Data\DAO\transPayAttendanceDAO.cs" />
+    <Compile Include="App_Data\DAO\userDAO.cs" />
+    <Compile Include="App_Data\DAO\yearDAO.cs" />
+    <Compile Include="App_Data\DAO\yearMainDAO.cs" />
+    <Compile Include="App_Data\UploadController.cs" />
+    <Compile Include="App_Data\UploadDataModel.cs" />
+    <Compile Include="App_Data\VO\attendanceVO.cs" />
+    <Compile Include="App_Data\VO\attnClockAmendmentVO.cs" />
+    <Compile Include="App_Data\VO\bankVO.cs" />
+    <Compile Include="App_Data\VO\bindDataClassVO.cs" />
+    <Compile Include="App_Data\VO\branchesVO.cs" />
+    <Compile Include="App_Data\VO\bulkClockingListVO.cs" />
+    <Compile Include="App_Data\VO\canteenGroupVO.cs" />
+    <Compile Include="App_Data\VO\canteenVO.cs" />
+    <Compile Include="App_Data\VO\checkInOutVO.cs" />
+    <Compile Include="App_Data\VO\companyVO.cs" />
+    <Compile Include="App_Data\VO\cpfAgeGroupVO.cs" />
+    <Compile Include="App_Data\VO\cpfConfigVO.cs" />
+    <Compile Include="App_Data\VO\cpfGroupVO.cs" />
+    <Compile Include="App_Data\VO\cpfSalGroupVO.cs" />
+    <Compile Include="App_Data\VO\cpfSettingsVO.cs" />
+    <Compile Include="App_Data\VO\departmentEmployeeStatusVO.cs" />
+    <Compile Include="App_Data\VO\departmentVO.cs" />
+    <Compile Include="App_Data\VO\designationVO.cs" />
+    <Compile Include="App_Data\VO\deviceFunctionParameterVO.cs" />
+    <Compile Include="App_Data\VO\deviceFunctionVO.cs" />
+    <Compile Include="App_Data\VO\deviceVO.cs" />
+    <Compile Include="App_Data\VO\DocsVO.cs" />
+    <Compile Include="App_Data\VO\documentCategoryVO.cs" />
+    <Compile Include="App_Data\VO\documentVO.cs" />
+    <Compile Include="App_Data\VO\earningDeductionVO.cs" />
+    <Compile Include="App_Data\VO\emailCCDetlsVO.cs" />
+    <Compile Include="App_Data\VO\emailCCGroupVO.cs" />
+    <Compile Include="App_Data\VO\emailSettingsVO.cs" />
+    <Compile Include="App_Data\VO\emailVO.cs" />
+    <Compile Include="App_Data\VO\employeeCategoryVO.cs" />
+    <Compile Include="App_Data\VO\employeeGradeVO.cs" />
+    <Compile Include="App_Data\VO\employeeTypeVO.cs" />
+    <Compile Include="App_Data\VO\employeeVO.cs" />
+    <Compile Include="App_Data\VO\fPDeviceFunctionValueVO.cs" />
+    <Compile Include="App_Data\VO\FPDeviceStatusVO.cs" />
+    <Compile Include="App_Data\VO\fPDeviceVO.cs" />
+    <Compile Include="App_Data\VO\fpEntriesFaceCardVO.cs" />
+    <Compile Include="App_Data\VO\fPEntriesVO.cs" />
+    <Compile Include="App_Data\VO\holidayVO.cs" />
+    <Compile Include="App_Data\VO\leaveApplicationVO.cs" />
+    <Compile Include="App_Data\VO\LeaveHistoryVO.cs" />
+    <Compile Include="App_Data\VO\leaveTypeVO.cs" />
+    <Compile Include="App_Data\VO\listVO.cs" />
+    <Compile Include="App_Data\VO\loanVO.cs" />
+    <Compile Include="App_Data\VO\lobVO.cs" />
+    <Compile Include="App_Data\VO\loginUserVO.cs" />
+    <Compile Include="App_Data\VO\maritalStatusVO.cs" />
+    <Compile Include="App_Data\VO\masterFpBackupDetVO.cs" />
+    <Compile Include="App_Data\VO\masterFpBackupVO.cs" />
+    <Compile Include="App_Data\VO\memberSearchVO.cs" />
+    <Compile Include="App_Data\VO\miscEarningDeductionVO.cs" />
+    <Compile Include="App_Data\VO\orgMapVO.cs" />
+    <Compile Include="App_Data\VO\overtimeTVO.cs" />
+    <Compile Include="App_Data\VO\overtimeVO.cs" />
+    <Compile Include="App_Data\VO\paybasisVO.cs" />
+    <Compile Include="App_Data\VO\paymentModeVO.cs" />
+    <Compile Include="App_Data\VO\payslipEDVO.cs" />
+    <Compile Include="App_Data\VO\payslipHeaderVO.cs" />
+    <Compile Include="App_Data\VO\payslipListVO.cs" />
+    <Compile Include="App_Data\VO\payslipLoanDetVO.cs" />
+    <Compile Include="App_Data\VO\payslipVO.cs" />
+    <Compile Include="App_Data\VO\policyGroupVO.cs" />
+    <Compile Include="App_Data\VO\processOTVO.cs" />
+    <Compile Include="App_Data\VO\projectGroupVO.cs" />
+    <Compile Include="App_Data\VO\projectTeamsDetlsVO.cs" />
+    <Compile Include="App_Data\VO\projectTeamStatus.cs" />
+    <Compile Include="App_Data\VO\projectVO.cs" />
+    <Compile Include="App_Data\VO\prYearGroupVO.cs" />
+    <Compile Include="App_Data\VO\relationshipVO.cs" />
+    <Compile Include="App_Data\VO\residenceStatusVO.cs" />
+    <Compile Include="App_Data\VO\roleManagerVO.cs" />
+    <Compile Include="App_Data\VO\roMemberDetlsVO.cs" />
+    <Compile Include="App_Data\VO\RoMemberInfoVO.cs" />
+    <Compile Include="App_Data\VO\ruleCategoryVO.cs" />
+    <Compile Include="App_Data\VO\ruleInfoTypeVO.cs" />
+    <Compile Include="App_Data\VO\rulePropertyInfoVO.cs" />
+    <Compile Include="App_Data\VO\rulesGroupVO.cs" />
+    <Compile Include="App_Data\VO\rulesVO.cs" />
+    <Compile Include="App_Data\VO\salaryEarningVO.cs" />
+    <Compile Include="App_Data\VO\searchListVO.cs" />
+    <Compile Include="App_Data\VO\shiftGroupDetlsVO.cs" />
+    <Compile Include="App_Data\VO\shiftGroupVO.cs" />
+    <Compile Include="App_Data\VO\shiftPeriodVO.cs" />
+    <Compile Include="App_Data\VO\shiftRosterMemberVO.cs" />
+    <Compile Include="App_Data\VO\shiftRosterVO.cs" />
+    <Compile Include="App_Data\VO\shiftVO.cs" />
+    <Compile Include="App_Data\VO\taxSlabVO.cs" />
+    <Compile Include="App_Data\VO\tourApplicationVO.cs" />
+    <Compile Include="App_Data\VO\tourVO.cs" />
+    <Compile Include="App_Data\VO\trainingVO.cs" />
+    <Compile Include="App_Data\VO\transPayAttendanceVO.cs" />
+    <Compile Include="App_Data\VO\userVO.cs" />
+    <Compile Include="App_Data\VO\yearMainVO.cs" />
+    <Compile Include="App_Data\VO\yearVO.cs" />
+    <Compile Include="Class\DragUtil.cs" />
+    <Compile Include="Class\MainFuntion.cs" />
+    <Compile Include="Class\PredicateBuilder.cs" />
+    <Compile Include="Class\QueryBuilderHelper.cs" />
+    <Compile Include="Class\RuleEngine.cs" />
+    <Compile Include="Class\Security.cs" />
+    <Compile Include="Class\TokenEvaluator.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLHelper\SQLHelper.cs" />
+    <Compile Include="System\Web\Http.cs" />
+    <Compile Include="Transactions\AmmenTClockByDate.aspx.cs">
+      <DependentUpon>AmmenTClockByDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions\AmmenTClockByDate.aspx.designer.cs">
+      <DependentUpon>AmmenTClockByDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\AmmentClockByEmp.aspx.cs">
+      <DependentUpon>AmmentClockByEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions\AmmentClockByEmp.aspx.designer.cs">
+      <DependentUpon>AmmentClockByEmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\ApplyLeave.aspx.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions\ApplyLeave.aspx.designer.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\BulkClocking.aspx.cs">
+      <DependentUpon>BulkClocking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions\BulkClocking.aspx.designer.cs">
+      <DependentUpon>BulkClocking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\LeaveRequest.aspx.cs">
+      <DependentUpon>LeaveRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions\LeaveRequest.aspx.designer.cs">
+      <DependentUpon>LeaveRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\Leave\ApplyLeave.aspx.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions\Leave\ApplyLeave.aspx.designer.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions\PaySlip.aspx.cs">
+      <DependentUpon>PaySlip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transactions\PaySlip.aspx.designer.cs">
+      <DependentUpon>PaySlip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Navigation.ascx.cs">
+      <DependentUpon>Navigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Navigation.ascx.designer.cs">
+      <DependentUpon>Navigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ValuesController1.cs" />
+    <Compile Include="ValuesController2.cs" />
+    <Compile Include="ValuesController4.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Model\" />
+    <Folder Include="Attachments\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WinHttp">
+      <Guid>{662901FC-6951-4854-9EB2-D9A2570F2B2E}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58300</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58320/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

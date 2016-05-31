@@ -1,0 +1,416 @@
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\ApplicationInsights.config
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\csc.exe
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\System.Collections.Immutable.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\System.Reflection.Metadata.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\vbc.exe
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\VBCSCompiler.exe
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\roslyn\VBCSCompiler.exe.config
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\BizHRMS.dll.config
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\BizHRMS.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\BizHRMS.pdb
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.Agent.Intercept.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.DependencyCollector.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.Web.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.WindowsServer.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.ApplicationInsights.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.Web.xml
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\obj\Debug\BizHRMS.dll
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\obj\Debug\BizHRMS.pdb
+F:\ASP\BizHRMS\BizHRMS\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+I:\freelancer\Anuradha\working\manu\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\ApplicationInsights.config
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\csc.exe
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\vbc.exe
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.dll.config
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.pdb
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Web.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\NCalc.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\NSubstitute.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\SimpleExpressionEvaluator.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Web.xml
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.dll
+C:\Users\Manukuttan P.K\Downloads\BizHRMS001-2016-02-13\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.pdb
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\ApplicationInsights.config
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\csc.exe
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\System.Collections.Immutable.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\System.Reflection.Metadata.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\vbc.exe
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\VBCSCompiler.exe
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\VBCSCompiler.exe.config
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.dll.config
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.pdb
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\itextsharp.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\itextsharp.xmlworker.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Agent.Intercept.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.DependencyCollector.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Web.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.WindowsServer.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.ApplicationInsights.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\NCalc.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Newtonsoft.Json.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\NSubstitute.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\ObjectMapper.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\SimpleExpressionEvaluator.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Net.Http.Formatting.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Web.Http.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\itextsharp.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Web.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\Newtonsoft.Json.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Net.Http.Formatting.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Web.Http.xml
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\Interop.WinHttp.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.csproj.ResolveComReference.cache
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.dll
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.pdb
+P:\ASP.NET C#\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\ApplicationInsights.config
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\csc.exe
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\System.Collections.Immutable.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\System.Reflection.Metadata.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\vbc.exe
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\VBCSCompiler.exe
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\VBCSCompiler.exe.config
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.dll.config
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.pdb
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\itextsharp.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\itextsharp.xmlworker.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Agent.Intercept.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.DependencyCollector.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Web.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.WindowsServer.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.ApplicationInsights.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\NCalc.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Newtonsoft.Json.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\NSubstitute.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\ObjectMapper.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\SimpleExpressionEvaluator.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Net.Http.Formatting.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Web.Http.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\itextsharp.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Web.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Newtonsoft.Json.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Net.Http.Formatting.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Web.Http.xml
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\Interop.WinHttp.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.csproj.ResolveComReference.cache
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.dll
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.pdb
+P:\ASP.NET C#\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\ApplicationInsights.config
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\csc.exe
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\System.Collections.Immutable.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\System.Reflection.Metadata.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\vbc.exe
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\VBCSCompiler.exe
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\roslyn\VBCSCompiler.exe.config
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.dll.config
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\BizHRMS.pdb
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\itextsharp.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\itextsharp.xmlworker.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.DependencyCollector.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Web.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.WindowsServer.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.ApplicationInsights.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\NCalc.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Newtonsoft.Json.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\NSubstitute.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\ObjectMapper.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\SimpleExpressionEvaluator.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Net.Http.Formatting.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Web.Http.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\itextsharp.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.Web.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\Newtonsoft.Json.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Net.Http.Formatting.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\bin\System.Web.Http.xml
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\Interop.WinHttp.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.csproj.ResolveComReference.cache
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.dll
+D:\WEB DEVELOPMENT PROJECTS\HRMS\BizHRMS001_AS_ON_25_04_2016\BizHRMS001\BizHRMS001\BizHRMS\obj\Debug\BizHRMS.pdb
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\ApplicationInsights.config
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\csc.exe
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\System.Collections.Immutable.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\System.Reflection.Metadata.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\vbc.exe
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\VBCSCompiler.exe
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\roslyn\VBCSCompiler.exe.config
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\BizHRMS.dll.config
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\BizHRMS.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\BizHRMS.pdb
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\itextsharp.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\itextsharp.xmlworker.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.Agent.Intercept.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.DependencyCollector.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.Web.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.WindowsServer.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.ApplicationInsights.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\NCalc.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Newtonsoft.Json.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\NSubstitute.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\ObjectMapper.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\SimpleExpressionEvaluator.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\System.Net.Http.Formatting.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\System.Web.Http.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\itextsharp.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.Web.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\Newtonsoft.Json.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\System.Net.Http.Formatting.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\bin\System.Web.Http.xml
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\obj\Debug\Interop.WinHttp.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.csproj.ResolveComReference.cache
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.dll
+P:\ASP.NET C#\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.pdb
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\obj\Debug\Interop.WinHttp.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.csproj.ResolveComReference.cache
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.pdb
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\ApplicationInsights.config
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\csc.exe
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\System.Collections.Immutable.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\System.Reflection.Metadata.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\vbc.exe
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\VBCSCompiler.exe
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\roslyn\VBCSCompiler.exe.config
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\BizHRMS.dll.config
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\BizHRMS.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\BizHRMS.pdb
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\itextsharp.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\itextsharp.xmlworker.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.DependencyCollector.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.Web.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.WindowsServer.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.ApplicationInsights.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\NCalc.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Newtonsoft.Json.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\NSubstitute.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\ObjectMapper.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\SimpleExpressionEvaluator.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\System.Net.Http.Formatting.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\System.Web.Http.dll
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\itextsharp.xml
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.Web.xml
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\Newtonsoft.Json.xml
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\System.Net.Http.Formatting.xml
+D:\WEB DEVELOPMENT PROJECTS\Projects@May-2016\HRMS_Projects\BizHRMS\bin\System.Web.Http.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\ApplicationInsights.config
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\csc.exe
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\System.Collections.Immutable.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\System.Reflection.Metadata.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\vbc.exe
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\VBCSCompiler.exe
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\roslyn\VBCSCompiler.exe.config
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\BizHRMS.dll.config
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\BizHRMS.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\BizHRMS.pdb
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\itextsharp.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\itextsharp.xmlworker.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.Agent.Intercept.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.DependencyCollector.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.PerfCounterCollector.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.Web.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.WindowsServer.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.ApplicationInsights.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\NCalc.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Newtonsoft.Json.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\NSubstitute.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\ObjectMapper.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\SimpleExpressionEvaluator.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\System.Net.Http.Formatting.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\System.Web.Http.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\itextsharp.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.Web.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\Newtonsoft.Json.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\System.Net.Http.Formatting.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\bin\System.Web.Http.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\obj\Debug\Interop.WinHttp.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.csproj.ResolveComReference.cache
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\HRMS_Projects\BizHRMS\obj\Debug\BizHRMS.pdb
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\ApplicationInsights.config
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\BizHRMS.dll.config
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\BizHRMS.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\BizHRMS.pdb
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\NCalc.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\NSubstitute.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\ObjectMapper.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\SimpleExpressionEvaluator.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\itextsharp.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\Microsoft.AI.Web.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\Newtonsoft.Json.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\System.Net.Http.Formatting.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\bin\System.Web.Http.xml
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\obj\Debug\Interop.WinHttp.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\obj\Debug\BizHRMS.csproj.ResolveComReference.cache
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\obj\Debug\BizHRMS.dll
+I:\freelancer\Anuradha\working\manu\17052016\HRMS_Projects_10_05_2016\BizHRMS\obj\Debug\BizHRMS.pdb
+P:\Projects@May\BizHRMS\bin\ApplicationInsights.config
+P:\Projects@May\BizHRMS\bin\BizHRMS.dll.config
+P:\Projects@May\BizHRMS\bin\BizHRMS.dll
+P:\Projects@May\BizHRMS\bin\BizHRMS.pdb
+P:\Projects@May\BizHRMS\bin\NCalc.dll
+P:\Projects@May\BizHRMS\bin\NSubstitute.dll
+P:\Projects@May\BizHRMS\bin\ObjectMapper.dll
+P:\Projects@May\BizHRMS\bin\SimpleExpressionEvaluator.dll
+P:\Projects@May\BizHRMS\bin\itextsharp.xml
+P:\Projects@May\BizHRMS\bin\Microsoft.AI.DependencyCollector.xml
+P:\Projects@May\BizHRMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+P:\Projects@May\BizHRMS\bin\Microsoft.AI.Web.xml
+P:\Projects@May\BizHRMS\bin\Microsoft.AI.WindowsServer.xml
+P:\Projects@May\BizHRMS\bin\Microsoft.ApplicationInsights.xml
+P:\Projects@May\BizHRMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+P:\Projects@May\BizHRMS\bin\Newtonsoft.Json.xml
+P:\Projects@May\BizHRMS\bin\System.Net.Http.Formatting.xml
+P:\Projects@May\BizHRMS\bin\System.Web.Http.xml
+P:\Projects@May\BizHRMS\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache
+P:\Projects@May\BizHRMS\obj\Debug\Interop.WinHttp.dll
+P:\Projects@May\BizHRMS\obj\Debug\BizHRMS.csproj.ResolveComReference.cache
+P:\Projects@May\BizHRMS\obj\Debug\BizHRMS.dll
+P:\Projects@May\BizHRMS\obj\Debug\BizHRMS.pdb
+D:\zan\Projects\HRM May\ELeave\bin\ApplicationInsights.config
+D:\zan\Projects\HRM May\ELeave\bin\BizHRMS.dll.config
+D:\zan\Projects\HRM May\ELeave\bin\BizHRMS.dll
+D:\zan\Projects\HRM May\ELeave\bin\BizHRMS.pdb
+D:\zan\Projects\HRM May\ELeave\bin\NCalc.dll
+D:\zan\Projects\HRM May\ELeave\bin\NSubstitute.dll
+D:\zan\Projects\HRM May\ELeave\bin\ObjectMapper.dll
+D:\zan\Projects\HRM May\ELeave\bin\SimpleExpressionEvaluator.dll
+D:\zan\Projects\HRM May\ELeave\obj\Debug\Interop.WinHttp.dll
+D:\zan\Projects\HRM May\ELeave\obj\Debug\BizHRMS.csproj.ResolveComReference.cache
+D:\zan\Projects\HRM May\ELeave\obj\Debug\BizHRMS.dll
+D:\zan\Projects\HRM May\ELeave\obj\Debug\BizHRMS.pdb
+D:\zan\Projects\HRM May\ELeave\obj\Debug\BizHRMS.csprojResolveAssemblyReference.cache

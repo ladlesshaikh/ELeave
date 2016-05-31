@@ -1,0 +1,243 @@
+﻿input[type=text] {
+    border: #ccc solid 1px;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    padding: 2px;
+    margin-top: 0px;
+    height: 25px;
+}
+
+label {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.cal {
+    width: 130px !important;
+}
+
+.FilterContainer {
+    padding: 19px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    background: #f5f5f5;
+}
+
+    .FilterContainer table tr td {
+        padding-left: 5px;
+        font-size: 13px;
+    }
+
+    .FilterContainer tr td:first-child {
+        padding-left: 0px;
+    }
+
+.date {
+    width: 130px;
+}
+
+.selectator_element.single {
+    height: 25px !important;
+    padding: 2px !important;
+}
+
+#ddlEmloyee {
+    width: 100% !important;
+    margin-top: 2px;
+}
+
+#selectator_ddlEmloyee {
+    margin-top: 1px;
+}
+
+.input-control {
+    height: 0px !important;
+    min-height: 0px !important;
+    margin: 0px !important;
+    line-height: 0px !important;
+    margin-top: 4px !important;
+}
+
+.table tr th {
+    color: #000 !important;
+}
+
+#tblLst_info {
+    background: #fff !important;
+    font-size: 11px !important;
+    color: #000 !important;
+}
+
+table.dataTable thead th, table.dataTable thead td, table.dataTable tbody th, table.dataTable tbody td {
+    border-bottom: 1px solid #111 !important;
+    font-size: 12px !important;
+    padding: 5px 14px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+#tblLst tr td {
+    font-size: 14px;
+}
+
+#tblLst_paginate .paginate_button {
+    padding: 3px 12px !important;
+    font-size: 13px;
+    width:auto;
+}
+#tblLst
+{
+    width:100%;
+}
+.ListContainer
+{
+    background:#fff;
+    padding:19px;
+    margin-top:0px;
+}
+.sleekBtn
+{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    height:30px !important;
+}
+.NoMargin
+{
+    margin-bottom:0px !important;
+}
+.PullRight
+{
+    float:right;
+}
+.NoTopMargin
+{
+    padding-top:0px;
+}
+.BorderLine
+{
+    padding-bottom:5px;
+    border-bottom:#ccc solid 1px;
+}
+.ui-datepicker
+{
+    font-size:13px !important;
+}
+.UltraSleek{
+    height:25px !important;
+    margin:0px;
+}
+table.dataTable tbody td
+{
+    padding:2px 3px !important;
+
+}
+.ui-dialog 
+{
+    font-size:13px !important;
+    padding:3px;
+    padding-top:10px;
+}
+.tblAlign tr td
+{
+    font-size:13px !important;
+    padding-left:5px;
+}
+.tblAlign tr td:first-child
+{
+    padding-left:0px;
+}
+.TitlePara
+{
+    margin:0px;
+    font-size:13px;
+    color:#0094ff;
+    margin-bottom:10px;
+}
+.TimePickerText
+{
+    width:60px;
+}
+.ReasonTA
+{
+    width:100%;height:50px !important;width:264px;border:#ccc solid 1px;
+}
+.JQueryButton
+{
+    height:25px !important;
+    padding:3px 12px !important;
+    font-size:13px !important;
+}
+hr
+{
+    background-color:#ccc;
+}
+.TotalTab tr td{
+      border: 1px solid #ccc;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+.HighLight_Panel{
+    background:rgb(255, 248, 217);
+    padding:19px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#tblLst tr td:first-child
+{
+    text-align:center;
+}
+.Popup_Header
+{
+    width:500px;
+    padding:10px;
+    background:#f5f5f5;
+    height:405px;
+    border:#ccc solid 1px;
+}
+.Aligner tr td
+{
+    padding-right:5px;
+}
+.Aligner
+{
+    width:480px !important;
+    font-size:13px;
+}
+.width100{
+    width:100% !important;
+}
+.customTable tr td,.customTable tr th
+{
+    text-align:left;
+    color:#000;
+font-size: 12px !important;
+padding: 5px 14px !important;
+padding-left: 5px !important;
+padding-right: 5px !important;
+}
+#tblDocs_length,#tblDocs_filter
+{
+    display:none;
+}
+#tblDocs_info,#tblDocs_paginate a
+{
+    font-size:10px;
+}
+#tblsDocsView tr th,#tblsDocsView tr td
+{
+    font-size:12px;
+    padding:5px;
+}
+.a_view
+{
+    color:#111;
+    cursor:pointer;
+}
+.a_view:hover
+{
+    text-decoration:underline;
+}
+#transfer_dialog
+{
+    width:100% !important; 
+}
