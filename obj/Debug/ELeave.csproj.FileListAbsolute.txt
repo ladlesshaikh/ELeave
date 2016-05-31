@@ -24,3 +24,16 @@ D:\Data\Projects\Pilot\ELeave\ELeave\obj\Debug\Interop.WinHttp.dll
 D:\Data\Projects\Pilot\ELeave\ELeave\obj\Debug\ELeave.csproj.ResolveComReference.cache
 D:\Data\Projects\Pilot\ELeave\ELeave\obj\Debug\BizHRMS.dll
 D:\Data\Projects\Pilot\ELeave\ELeave\obj\Debug\BizHRMS.pdb
+D:\Data\Projects\Pilot\ELeave\Code\bin\ApplicationInsights.config
+D:\Data\Projects\Pilot\ELeave\Code\bin\BizHRMS.dll.config
+D:\Data\Projects\Pilot\ELeave\Code\bin\BizHRMS.dll
+D:\Data\Projects\Pilot\ELeave\Code\bin\BizHRMS.pdb
+D:\Data\Projects\Pilot\ELeave\Code\bin\NCalc.dll
+D:\Data\Projects\Pilot\ELeave\Code\bin\NSubstitute.dll
+D:\Data\Projects\Pilot\ELeave\Code\bin\ObjectMapper.dll
+D:\Data\Projects\Pilot\ELeave\Code\bin\SimpleExpressionEvaluator.dll
+D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\ELeave.csprojResolveAssemblyReference.cache
+D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\Interop.WinHttp.dll
+D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\ELeave.csproj.ResolveComReference.cache
+D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\BizHRMS.dll
+D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\BizHRMS.pdb

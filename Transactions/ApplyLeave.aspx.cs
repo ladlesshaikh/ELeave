@@ -259,7 +259,7 @@ namespace BizHRMS.Transactions
                 //
                 lstROLeave = bus.DuplicateCheck(p_strMemberCode, p_dtFrom, p_dtTo);
 
-
+                p_fTotalDays = TotalLeaveDaysExcudingHolidays(p_dtFrom, p_dtTo);
                 // if (i==1)
                 if (lstROLeave.Count > 0)
                 {
@@ -334,6 +334,7 @@ namespace BizHRMS.Transactions
                 if (lstEmpStatusVO == null)
                 {
                     // ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, p_strRowId, strFlagpercent);
+                  
                     ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, p_strRowId, halfdayleavemode);
                 }
                 else
@@ -452,7 +453,43 @@ namespace BizHRMS.Transactions
             }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fromDate"></param>
+        /// <param name="toDate"></param>
+        /// <returns></returns>
+        private static int TotalLeaveDaysExcudingHolidays(DateTime fromDate, DateTime toDate)
+        {
+            var retVal = 0;
+            DateTime startDate = fromDate;
+            DateTime endDate = toDate;
+            TimeSpan diff = endDate - startDate;
+            int days = diff.Days;
+            retVal = days;
+            var holidayDao = new HolidyDAO();
+            var holidays = holidayDao.LoadDataGridList();
+            for (var i = 0; i <= days; i++)
+            {
+                var testDate = startDate.AddDays(i);
+                switch (testDate.DayOfWeek)
+                {
+                    case DayOfWeek.Saturday:
+                    case DayOfWeek.Sunday:
+                        retVal = retVal - 1;
+                        break;
+                    default:
+                        var dateString = testDate.ToString("dd/MM/yyyy");
+                        var holiday = holidays.Find(h => h.Holiday_Date == dateString);
+                        if (null != holiday)
+                        {
+                            retVal = retVal - 1;
+                        }
+                        break;
+                }
+            }
+            return retVal;
+        }
         #region Creating Leave Application Id
         [WebMethod]
         public static string CreateGUID()
