@@ -183,10 +183,10 @@ namespace BizHRMS
                             LeaveApplicationBUS LAB = new LeaveApplicationBUS();
                             List<LeaveApplicationVO> lstLeaveApp = new List<LeaveApplicationVO>();
                             lstLeaveApp = LAB.getLeaveApplicationListByRO(GlobalVariable.UserCode, branchCode);
-                            if (lstLeaveApp.Count == 0)
-                            {
-                                Response.Redirect("Transactions/Leave/ApplyLeave.aspx");
-                            }
+                            //if (lstLeaveApp.Count == 0)
+                            //{
+                            //    Response.Redirect("Transactions/Leave/ApplyLeave.aspx");
+                            //}
 
                             Response.Redirect("Transactions/LeaveRequest.aspx");
                         }
