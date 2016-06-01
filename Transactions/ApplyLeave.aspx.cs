@@ -419,7 +419,8 @@ namespace BizHRMS.Transactions
                 //5.Mail Header Details
                 EmailCCDetlsBUS emailCCBUS = new EmailCCDetlsBUS();
                 emailH.CCList = emailCCBUS.getEmailCCList(strMemberCode, "");
-
+                emailH.CCList.AddRange(cclst);
+                emailH.CCList.AddRange(tolist);
 
                 BindingList<EmailSettingsVO> emailSettings = esBUS.getEmailSettingsBindingList();
                 emailH.IsHTML = 1;
