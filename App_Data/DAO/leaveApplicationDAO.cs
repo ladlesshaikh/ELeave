@@ -180,7 +180,7 @@ namespace ATTNPAY.Core
         #endregion ...
 
         #region "Load Leave Request Based on the RO/Admin"
-        public List<LeaveApplicationVO> LoadDataGridListByRO(string mem_code,string branchCode)
+        public List<LeaveApplicationVO> LoadDataGridListByRO(string mem_code, string branchCode)
         {
             EmployeeBUS bus = new EmployeeBUS();
             LoginUserBUS loginUsr = new LoginUserBUS();
@@ -255,7 +255,7 @@ namespace ATTNPAY.Core
             try
             {
 
-                strSQL = "SELECT  CONVERT(VARCHAR(36),L.ROW_ID) ROW_ID ,L.MEM_CODE,M.Member_Name,L.LeaveCode, \n" +
+                strSQL = "SELECT L.Is_Sanctioned,CONVERT(VARCHAR(36),L.ROW_ID) ROW_ID ,L.MEM_CODE,M.Member_Name,L.LeaveCode, \n" +
                               " ML.LeaveName,CONVERT(VARCHAR(12),APP_DATE,106) APP_DATE,CONVERT(VARCHAR(12),FROM_DATE,106) FROM_DATE,\n" +
                               " CONVERT(VARCHAR(12),TO_DATE,106) TO_DATE,TOT_DAY,l.ACTIVATE,L.REASON,isnull(SPECIAL_LEAVE,0) SPECIAL_LEAVE, \n" +
                               " isnull(HALF_DAY_LEAVE,0) HALF_DAY_LEAVE FROM TRAN_LEAVE L \n" +
@@ -590,7 +590,7 @@ namespace ATTNPAY.Core
         }
         #endregion
 
-        #region Auto approve leave 
+        #region Auto approve leave
         public bool AutoApproveLeaveDAO(string RowId)
         {
             try
@@ -700,8 +700,8 @@ namespace ATTNPAY.Core
                         "    from [TRAN_LEAVE] \n" +
                         "   WHERE FROM_DATE >= '" + dtFrom.ToString("dd-MMM-yyy", CultureInfo.InvariantCulture) + "' AND TO_DATE<= '" + dtTo.ToString("dd-MMM-yyy", CultureInfo.InvariantCulture) + "'\n" +
                         "   AND FinYear =" + GlobalVariable.FinanCialYear + " and Is_Sanctioned  in (1,2) and MEM_CODE = '" + strMemCode.Trim() + "'"; //AND A.Is_Sanctioned = 1
-                        
-               lstRo = BindClassWithData.BindClass<RoMemberDetlsVO>(SQLHelper.ShowRecord(strSQL)).ToList();              
+
+                lstRo = BindClassWithData.BindClass<RoMemberDetlsVO>(SQLHelper.ShowRecord(strSQL)).ToList();
                 return lstRo;
 
             }
@@ -797,5 +797,5 @@ namespace ATTNPAY.Core
 
 
     }
-   
+
 }

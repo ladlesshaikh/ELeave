@@ -125,7 +125,7 @@
                                 <th>From</th>
                                 <th>To</th>
                                 <th>Total</th>
-                               <%--  <th>Leave type</th>--%>
+                                <%--  <th>Leave type</th>--%>
                                 <th>Reason for Leave</th>
                                 <th>Type</th>
                                 <th>Status</th>
@@ -137,7 +137,7 @@
                                 <th></th>
                                 <th></th>
                                 <th>Attachments</th>
-                             <th>Leave Type</th>
+                                <th>Leave Type</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -150,7 +150,7 @@
         <div data-role="dialog" title="Leave Application" id="dialog" class="padding20 dialog" style="display: none">
             <div class="Popup_Header">
                 <table class="Aligner">
-                    <tr style="display:none;">
+                    <tr style="display: none;">
                         <td>Leave Id</td>
                         <td colspan="3">
                             <input type="text" id="txtLeaveId" style="width: 280px;" disabled="disabled" />
@@ -192,7 +192,7 @@
                     </tr>
                     <tr>
                         <td style="padding-top: 11px;">Leave type</td>
-                       <%-- <td>
+                        <%-- <td>
                             <label class="input-control checkbox small-check" style="margin-top: 0px !important">
                                 <input type="checkbox" id="chkSpecialLeave" runat="server">
                                 <span class="check"></span>
@@ -233,25 +233,25 @@
                     <tr>
                         <td colspan="2" style="padding-bottom: 12px; color: rgb(0, 75, 110)">Supporting documents (if any)</td>
                     </tr>
-                    <tr>
+                    <%--<tr>
                         <td style="width: 92px;">Type</td>
                         <td>
                             <select data-ng-change="CheckMedicalRec();" data-ng-model="attach.file_type" id="ddlLeaveAppDocType" runat="server" style="font-size: 12px; padding: 3px; margin-bottom: 5px;">
                                 <option data-ng-repeat="DocLst in DocTypeLst" data-id="{{DocLst.Is_Medical_Type}}" value="{{DocLst.DocumentId}}">{{DocLst.DocumentName}}</option>
                             </select>
                         </td>
-                    </tr>
+                    </tr>--%>
                     <tr>
                         <td></td>
                         <td style="color: #ff0000; font-size: 13px; padding-bottom: 7px;">{{Med_Status}}
                         </td>
                     </tr>
-                    <tr>
+                    <%--<tr>
                         <td>Remarks</td>
                         <td>
                             <textarea id="txtLeaveAppAttachment_Remarks" style="width: 100%; margin-bottom: 5px;" data-ng-model="attach.remarks"></textarea>
                         </td>
-                    </tr>
+                    </tr>--%>
                     <tr>
                         <td>Attachments
                         </td>
@@ -263,7 +263,7 @@
                     </tr>
                 </table>
             </div>
-            <table style="position: absolute; top: 421px; left: 12px; font-size: 12px;" id="tblTotLeave">
+            <table style="position: relative; left: 12px; font-size: 12px; top: 10px" id="tblTotLeave">
                 <tr>
                     <td>Total Leave applied: </td>
                     <td id="tdTotalLeaves" style="padding-left: 5px; padding-right: 5px; font-weight: bold; color: chocolate;">0</td>
@@ -275,14 +275,10 @@
             <input type="button" class="JQueryButton" value="Submit" id="btnLeaveAppSave" data-ng-click="SaveLeave();attachLeaveDocs();" style="float: right; margin-top: 5px;" />
         </div>
 
-
         <!--New Leave Application-->
         <div id="Leave_Application_dialog" title="Leave Application">
         </div>
         <!--end-->
-
-
-
 
 
         <div data-role="dialog" title="Attach Supporting documents" id="upload_dialog" class="padding20 dialog width100" style="display: none; width: 100% !important;">

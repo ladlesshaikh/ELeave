@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using Newtonsoft;
+using System.Linq;
 //using Newtonsoft.Json.Linq;
 using System.ComponentModel;
 using System.Web.Configuration;
@@ -71,140 +72,28 @@ namespace BizHRMS.Transactions
             }
         }
         #endregion
-
-        [WebMethod]
-        public static int SaveLeaveApp(string leaveId, string strRowId, string strMemberCode, string iLeaveType, string dtAppDate, string dtFrom, string dtTo, string fTotalDays, string isSpecialLeave, string isIsHalfDay, string iTotalDays, string strReason, string strFlag, string strFlagpercent, string halfdayleavemode)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="leaveId"></param>
+        /// <param name="strRowId"></param>
+        /// <param name="strMemberCode"></param>
+        /// <param name="iLeaveType"></param>
+        /// <param name="dtAppDate"></param>
+        /// <param name="dtFrom"></param>
+        /// <param name="dtTo"></param>
+        /// <param name="fTotalDays"></param>
+        /// <param name="isSpecialLeave"></param>
+        /// <param name="isIsHalfDay"></param>
+        /// <param name="iTotalDays"></param>
+        /// <param name="strReason"></param>
+        /// <param name="strFlag"></param>
+        /// <param name="strFlagpercent"></param>
+        /// <param name="halfdayleavemode"></param>
+        /// <returns></returns>
+        private static int SaveLeaveProxy(string leaveId, string strRowId, string strMemberCode, string iLeaveType, string dtAppDate, string dtFrom, string dtTo, string fTotalDays, string isSpecialLeave, string isIsHalfDay, string iTotalDays, string strReason, string strFlag, string strFlagpercent, string halfdayleavemode, bool isApprovedLeaveCancelletion = false)
         {
-            //List<DepartmentEmployeeStatusVO> lstEmpStatusVO = new List<DepartmentEmployeeStatusVO>();
-            //LeaveApplicationBUS LAB = new LeaveApplicationBUS();
-            //try
-            //{
-            //    string p_strRowId = strRowId;
-            //    string p_strMemberCode = strMemberCode;
-            //    string p_iLeaveType = iLeaveType;
-            //    int LeaveNA = 0;
-            //    int ret;
-            //    int MailSend = 0;
-            //    float percent = 0;
-            //    DateTime p_dtAppDate = DateTime.ParseExact(dtAppDate, "MM/dd/yyyy", CultureInfo.InvariantCulture);
-            //    DateTime p_dtFrom = DateTime.ParseExact(dtFrom, "MM/dd/yyyy", CultureInfo.InvariantCulture);
-            //    DateTime p_dtTo = DateTime.ParseExact(dtTo, "MM/dd/yyyy", CultureInfo.InvariantCulture);
-            //    float p_fTotalDays = float.Parse(fTotalDays, CultureInfo.InvariantCulture.NumberFormat);
-            //    bool p_isSpecialLeave = Convert.ToBoolean(Convert.ToInt32(isSpecialLeave));
-            //    bool p_isIsHalfDay = Convert.ToBoolean(Convert.ToInt32(isIsHalfDay));
-            //    int p_iTotalDays = Convert.ToInt32(iTotalDays);
-            //    string p_strReason = strReason;
-            //    string p_strFlag = strFlag;
-
-            //    /*
-            //    ProjectTeamStatusBUS bus = new ProjectTeamStatusBUS();
-            //    List<ProjectTeamStatusVO> lst = bus.getStatusList(p_strMemberCode);
-            //    for(var i=0;i<lst.Count;i++)
-            //    {
-            //        int mem_count = lst[i].Mem_Count;
-            //        int leave_count = lst[i].Leave_Count;
-            //        int per_leave = ((leave_count / mem_count) * 100);
-            //        if(per_leave>50)
-            //        {
-            //            LeaveNA = 1;
-            //        }
-            //    }
-            //    */
-
-            //    //Checking the RO Available
-            //    LeaveApplicationBUS bus = new LeaveApplicationBUS();
-            //    List<RoMemberDetlsVO> lstRO = new List<RoMemberDetlsVO>();
-            //    var IsAdmin = 0;
-            //    var ApprMemCode = "";
-            //    var ApprMemMail = "";
-            //    lstRO = bus.LeaveApplicationRosList(p_strMemberCode, p_dtFrom, p_dtTo);
-            //    //Checking the Returned List is admin/RO
-
-            //    if (lstRO.Count == 0)
-            //    {
-            //        return -200;
-            //    }
-
-            //    for (var i = 0; i < lstRO.Count; i++)
-            //    {
-            //        if (lstRO[i].IsAdmin == "1")
-            //        {
-            //            IsAdmin = 1;
-            //        }
-            //        if (i == 0)
-            //        {
-            //            ApprMemCode = lstRO[i].MemCode;
-            //            ApprMemMail = lstRO[i].EmailAddress;
-            //        }
-            //    }
-            //    if (IsAdmin == 0)
-            //    {
-            //        //Returned is RO Only
-
-            //    }
-            //    else
-            //    {
-            //        //Returned is Admin 
-            //        //Need to check whether any RO Assigned.
-            //        EmployeeBUS empBUS = new EmployeeBUS();
-            //        List<RoMemberInfoVO> ROLst = new List<RoMemberInfoVO>();
-            //        ROLst = empBUS.getRoMemberInfo(p_strMemberCode, false);
-
-            //        if (ROLst.Count == 0)
-            //        {
-            //            //No RO Assigned.
-            //            //Alert the User that contact admin, no ROs Assigned!
-            //            return -100;
-            //        }
-            //        else
-            //        {
-            //            //Proceed with Admin Code as ApprMemCode
-            //        }
-            //    }
-
-            //    DepartmentDAO _DeptDAO = new DepartmentDAO();
-            //    lstEmpStatusVO = _DeptDAO.GetStatusList(p_strMemberCode, p_dtFrom, p_dtTo);
-            //    if (lstEmpStatusVO == null || lstEmpStatusVO.Count == 0)
-            //    {
-            //        ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode,halfdayleavemode,p_strRowId);
-            //    }
-            //    else
-            //    {
-            //        for (var i = 0; i < lstEmpStatusVO.Count; i++)
-            //        {
-            //            percent = lstEmpStatusVO[i].TotPercentage;
-            //        }
-            //        if (percent >= 50)
-            //        {
-            //            ret = -10;
-            //        }
-            //        else
-            //        {
-            //            ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode,halfdayleavemode,p_strRowId);
-            //        }
-            //    }
-            //    MailSend = Sendmail(leaveId, p_strMemberCode, ApprMemMail);
-            //    if (MailSend == 1)
-            //    {
-            //        return ret;
-            //    }
-            //    else
-            //    {
-            //        if (ret == -600)
-            //        {
-            //            return ret;
-            //        }
-            //        else
-            //        {
-            //            return -500;
-            //        }
-            //    }
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    throw ex;
-            //}
+            var ret = 0;
             List<DepartmentEmployeeStatusVO> lstEmpStatusVO = new List<DepartmentEmployeeStatusVO>();
             LeaveApplicationBUS LAB = new LeaveApplicationBUS();
             try
@@ -214,7 +103,6 @@ namespace BizHRMS.Transactions
                 string p_iLeaveType = iLeaveType;
                 int LeaveNA = 0;
                 int MailSend = 0;
-                int ret;
                 float percent = 0;
                 DateTime p_dtAppDate = DateTime.ParseExact(dtAppDate, "MM/dd/yyyy", CultureInfo.InvariantCulture);
                 DateTime p_dtFrom = DateTime.ParseExact(dtFrom, "MM/dd/yyyy", CultureInfo.InvariantCulture);
@@ -459,6 +347,145 @@ namespace BizHRMS.Transactions
             {
                 throw ex;
             }
+            return ret;
+        }
+        [WebMethod]
+        public static int SaveLeaveApp(string leaveId, string strRowId, string strMemberCode, string iLeaveType, string dtAppDate, string dtFrom, string dtTo, string fTotalDays, string isSpecialLeave, string isIsHalfDay, string iTotalDays, string strReason, string strFlag, string strFlagpercent, string halfdayleavemode)
+        {
+            #region Commented code
+            //List<DepartmentEmployeeStatusVO> lstEmpStatusVO = new List<DepartmentEmployeeStatusVO>();
+            //LeaveApplicationBUS LAB = new LeaveApplicationBUS();
+            //try
+            //{
+            //    string p_strRowId = strRowId;
+            //    string p_strMemberCode = strMemberCode;
+            //    string p_iLeaveType = iLeaveType;
+            //    int LeaveNA = 0;
+            //    int ret;
+            //    int MailSend = 0;
+            //    float percent = 0;
+            //    DateTime p_dtAppDate = DateTime.ParseExact(dtAppDate, "MM/dd/yyyy", CultureInfo.InvariantCulture);
+            //    DateTime p_dtFrom = DateTime.ParseExact(dtFrom, "MM/dd/yyyy", CultureInfo.InvariantCulture);
+            //    DateTime p_dtTo = DateTime.ParseExact(dtTo, "MM/dd/yyyy", CultureInfo.InvariantCulture);
+            //    float p_fTotalDays = float.Parse(fTotalDays, CultureInfo.InvariantCulture.NumberFormat);
+            //    bool p_isSpecialLeave = Convert.ToBoolean(Convert.ToInt32(isSpecialLeave));
+            //    bool p_isIsHalfDay = Convert.ToBoolean(Convert.ToInt32(isIsHalfDay));
+            //    int p_iTotalDays = Convert.ToInt32(iTotalDays);
+            //    string p_strReason = strReason;
+            //    string p_strFlag = strFlag;
+
+            //    /*
+            //    ProjectTeamStatusBUS bus = new ProjectTeamStatusBUS();
+            //    List<ProjectTeamStatusVO> lst = bus.getStatusList(p_strMemberCode);
+            //    for(var i=0;i<lst.Count;i++)
+            //    {
+            //        int mem_count = lst[i].Mem_Count;
+            //        int leave_count = lst[i].Leave_Count;
+            //        int per_leave = ((leave_count / mem_count) * 100);
+            //        if(per_leave>50)
+            //        {
+            //            LeaveNA = 1;
+            //        }
+            //    }
+            //    */
+
+            //    //Checking the RO Available
+            //    LeaveApplicationBUS bus = new LeaveApplicationBUS();
+            //    List<RoMemberDetlsVO> lstRO = new List<RoMemberDetlsVO>();
+            //    var IsAdmin = 0;
+            //    var ApprMemCode = "";
+            //    var ApprMemMail = "";
+            //    lstRO = bus.LeaveApplicationRosList(p_strMemberCode, p_dtFrom, p_dtTo);
+            //    //Checking the Returned List is admin/RO
+
+            //    if (lstRO.Count == 0)
+            //    {
+            //        return -200;
+            //    }
+
+            //    for (var i = 0; i < lstRO.Count; i++)
+            //    {
+            //        if (lstRO[i].IsAdmin == "1")
+            //        {
+            //            IsAdmin = 1;
+            //        }
+            //        if (i == 0)
+            //        {
+            //            ApprMemCode = lstRO[i].MemCode;
+            //            ApprMemMail = lstRO[i].EmailAddress;
+            //        }
+            //    }
+            //    if (IsAdmin == 0)
+            //    {
+            //        //Returned is RO Only
+
+            //    }
+            //    else
+            //    {
+            //        //Returned is Admin 
+            //        //Need to check whether any RO Assigned.
+            //        EmployeeBUS empBUS = new EmployeeBUS();
+            //        List<RoMemberInfoVO> ROLst = new List<RoMemberInfoVO>();
+            //        ROLst = empBUS.getRoMemberInfo(p_strMemberCode, false);
+
+            //        if (ROLst.Count == 0)
+            //        {
+            //            //No RO Assigned.
+            //            //Alert the User that contact admin, no ROs Assigned!
+            //            return -100;
+            //        }
+            //        else
+            //        {
+            //            //Proceed with Admin Code as ApprMemCode
+            //        }
+            //    }
+
+            //    DepartmentDAO _DeptDAO = new DepartmentDAO();
+            //    lstEmpStatusVO = _DeptDAO.GetStatusList(p_strMemberCode, p_dtFrom, p_dtTo);
+            //    if (lstEmpStatusVO == null || lstEmpStatusVO.Count == 0)
+            //    {
+            //        ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode,halfdayleavemode,p_strRowId);
+            //    }
+            //    else
+            //    {
+            //        for (var i = 0; i < lstEmpStatusVO.Count; i++)
+            //        {
+            //            percent = lstEmpStatusVO[i].TotPercentage;
+            //        }
+            //        if (percent >= 50)
+            //        {
+            //            ret = -10;
+            //        }
+            //        else
+            //        {
+            //            ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode,halfdayleavemode,p_strRowId);
+            //        }
+            //    }
+            //    MailSend = Sendmail(leaveId, p_strMemberCode, ApprMemMail);
+            //    if (MailSend == 1)
+            //    {
+            //        return ret;
+            //    }
+            //    else
+            //    {
+            //        if (ret == -600)
+            //        {
+            //            return ret;
+            //        }
+            //        else
+            //        {
+            //            return -500;
+            //        }
+            //    }
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw ex;
+            //}
+            #endregion
+
+            return SaveLeaveProxy(leaveId, strRowId, strMemberCode, iLeaveType, dtAppDate, dtFrom, dtTo, fTotalDays, isSpecialLeave, isIsHalfDay, iTotalDays, strReason, strFlag, strFlagpercent, halfdayleavemode);
         }
 
         /// <summary>
@@ -536,12 +563,28 @@ namespace BizHRMS.Transactions
         [WebMethod]
         public static bool UpdateLeaveStatus(string StatusId, string RowId)
         {
+            bool ret = false;
             try
             {
                 string Edit_By = GlobalVariable.UserCode;
-
                 LeaveApplicationBUS LAB = new LeaveApplicationBUS();
-                bool ret = LAB.UpdateLeaveStatus(StatusId, RowId, Edit_By);
+
+                //added code here for applying approved cancel leave.
+                if (StatusId == "5")
+                {
+                    var leaveDetails = LAB.getLeaveApplicationListByMemCode(GlobalVariable.UserCode).FirstOrDefault(i => i.ROW_ID == RowId);
+                    //user canceling approved leave so apply leave with Cancel leave type.
+                    if (leaveDetails.Is_Sanctioned == 1)
+                    {
+                        ret = LAB.UpdateLeaveStatus("2", RowId, Edit_By);
+                        //string leaveId, string strRowId, string strMemberCode, string iLeaveType, string dtAppDate, string dtFrom, string dtTo, string fTotalDays, string isSpecialLeave, string isIsHalfDay, string iTotalDays, string strReason, string strFlag, string strFlagpercent, string halfdayleavemode, bool isApprovedLeaveCancelletion = false
+                        //SaveLeaveApp(leaveDetails.lea)
+                    }
+                }
+                else
+                {
+                    ret = LAB.UpdateLeaveStatus(StatusId, RowId, Edit_By);
+                }
                 return ret;
             }
             catch (Exception ex)

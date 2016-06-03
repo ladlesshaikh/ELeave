@@ -9,34 +9,33 @@ $(document).ready(function () {
         dialoght = 248;
         popupht = 199;
         totleavetop = 220;
-        $("#tblUploadDoc").hide();
-        $("#tblTotLeave").css("top", "220px");
-        $(".Popup_Header").css("height","199px")
+        //$("#tblUploadDoc").hide();
+        //$("#tblTotLeave").css("top", "220px");
+        //$(".Popup_Header").css("height", "300px")
         $("#dialog").dialog({
             autoOpen: false,
-            height: 285,
+            //height: 285,
             width: 532,
             modal: true
         });
     }
-    else
-    {
+    else {
         $("#dialog").dialog({
             autoOpen: false,
-            height: 500,
+            //height: 500,
             width: 532,
             modal: true
         });
     }
 
-   
+
     $("#Update_dialog").dialog({
         autoOpen: false,
         height: 150,
         width: 303,
         modal: true
     });
-    
+
     $("#upload_dialog").dialog({
         autoOpen: false,
         height: 370,
@@ -47,7 +46,7 @@ $(document).ready(function () {
     $("#Leave_Application_dialog").dialog({
         autoOpen: false,
         height: 370,
-        width:800,
+        width: 800,
         modal: true
     });
 
@@ -132,7 +131,7 @@ $(document).ready(function () {
         ]
     });
 
-   
+
 })
 
 function showUploadDialog(sender) {
@@ -148,11 +147,9 @@ function showUploadDialog(sender) {
 
 function Sendmail(sender) {
     var id = sender.id;
-    if($("#"+id).attr('data-id')==1)
-    {
+    if ($("#" + id).attr('data-id') == 1) {
         var e = confirm("You have already send the mail, want to send again ?");
-        if(e==false)
-        {
+        if (e == false) {
             return false;
         }
     }
@@ -206,7 +203,7 @@ function showDialog() {
     angular.element(document.getElementById('btnLeaveAppSave')).scope().createLeaveId();
 
 
-   
+
 }
 
 
@@ -226,12 +223,10 @@ function EditDialog(sender) {
     $("#ToDate").val(table.row(split).data()[4]);
     $("#txtReason").val(table.row(split).data()[6]);
     $("#tdTotalLeaves").html(table.row(split).data()[5])
-    if(table.row(split).data()[13]==1)
-    {
-        $("#chkSpecialLeave").attr('checked','checked')
+    if (table.row(split).data()[13] == 1) {
+        $("#chkSpecialLeave").attr('checked', 'checked')
     }
-    else
-    {
+    else {
         $("#chkSpecialLeave").removeAttr('checked');
     }
     if (table.row(split).data()[14] == 1) {
@@ -242,12 +237,10 @@ function EditDialog(sender) {
         $("#checkAM").removeAttr("checked");
         $("#checkPM").removeAttr("checked");
         console.log(h_mode);
-        if(h_mode=="AM")
-        {
-            $("#checkAM").prop("checked","checked");
+        if (h_mode == "AM") {
+            $("#checkAM").prop("checked", "checked");
         }
-        if(h_mode=="PM")
-        {
+        if (h_mode == "PM") {
             $("#checkPM").prop("checked", "checked");
         }
     }
@@ -278,20 +271,18 @@ function CalculateDiff() {
         var diff_date = To_date - From_date;
         var days = Math.floor(((diff_date % 31536000000) % 2628000000) / 86400000);
         $("#tdTotalLeaves").html(days);
-        if (days == 0)
-        {
+        if (days == 0) {
             $("#tdTotalLeaves").html("1");
             $("#chkHalfDayLeave").prop("checked", "checked");
         }
     }
     else {
-       
+
         return false;
     }
 }
 
-function CloseDialog()
-{
+function CloseDialog() {
     $("#Update_dialog").dialog("close");
 }
 function CloseDialog1() {

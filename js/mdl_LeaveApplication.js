@@ -68,15 +68,19 @@ app.controller('Ctrl_AppLeave', function ($scope, $http, $timeout, $upload) {
             else {
                 if (d[i].Is_Sanctioned == "1") {
                     var Status = '<img src="../../images/accepted.png" style="height:20px;">';
+                    DelMarkup = '<button  id="btnDel_' + i + '" type="button" style="font-size: 13px;" class="button danger UltraSleek" onclick="CancelDialog(this)">Cancel</button>';
                 }
                 else if (d[i].Is_Sanctioned == "3") {
                     var Status = '<img src="../../images/cancelled.png" style="height:20px;">';
+                    DelMarkup = '<button type="button" disabled="disabled" style="font-size: 13px;" class="button UltraSleek">Cancel</button>';
                 }
                 else {
                     var Status = '<img src="../../images/rejected.png" style="height:20px;">';
                     rejection_remarks = d[i].RO_REMARKS;
+                    DelMarkup = '<button type="button" disabled="disabled" style="font-size: 13px;" class="button UltraSleek">Cancel</button>';
                 }
-                DelMarkup = '<button type="button" disabled="disabled" style="font-size: 13px;" class="button UltraSleek">Cancel</button>';
+
+
             }
             var Type = "";
             if (d[i].SPECIAL_LEAVE == 1) {
