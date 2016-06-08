@@ -112,7 +112,7 @@ namespace BizHRMS.Transactions
                 p_fTotalDays = p_fTotalDays + 1;
                 bool p_isSpecialLeave = Convert.ToBoolean(Convert.ToInt32(isSpecialLeave));
                 bool p_isIsHalfDay = Convert.ToBoolean(Convert.ToInt32(isIsHalfDay));
-                int p_iTotalDays = Convert.ToInt32(iTotalDays);
+                //int p_iTotalDays = Convert.ToInt32(iTotalDays);
                 string p_strReason = strReason;
                 string p_strFlag = strFlag;
                 string cclist = "";
@@ -156,7 +156,7 @@ namespace BizHRMS.Transactions
                     p_fTotalDays = TotalLeaveDaysExcudingHolidays(p_dtFrom, p_dtTo) + 1;
                 }
                 // if (i==1)
-                if (lstROLeave.Count > 0)
+                if (lstROLeave.Count > 0 && !isApprovedLeaveCancelletion)
                 {
                     return -50;
 
@@ -229,8 +229,10 @@ namespace BizHRMS.Transactions
                 if (lstEmpStatusVO == null)
                 {
                     // ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, p_strRowId, strFlagpercent);
-
-                    ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, p_strRowId, halfdayleavemode);
+                    if (!isApprovedLeaveCancelletion)
+                    {
+                        ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, p_strRowId, halfdayleavemode);
+                    }
                 }
                 else
                 {
@@ -246,7 +248,10 @@ namespace BizHRMS.Transactions
                     else
                     {
                         // ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, p_strRowId);
-                        ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, halfdayleavemode, p_strRowId);
+                        if (!isApprovedLeaveCancelletion)
+                        {
+                            ret = LAB.AddNewLeave(leaveId, p_strMemberCode, p_iLeaveType, p_dtAppDate, p_dtFrom, p_dtTo, p_fTotalDays, p_isSpecialLeave, p_isIsHalfDay, p_strReason, p_strFlag, GlobalVariable.UserCode, GlobalVariable.FinanCialYear, ApprMemCode, halfdayleavemode, p_strRowId);
+                        }
                     }
                 }
 
@@ -295,6 +300,7 @@ namespace BizHRMS.Transactions
 
                 tolist = emBUS.GetROAppDetEmail(ApprMemCode);
                 cclst = emBUS.GetROCCtEmail(strMemberCode, ApprMemCode);
+                cclst = cclst ?? new List<string>();
                 //tolist.Add("manukuttanpk@gmail.com");
                 emailH.EmailToList = tolist;
                 //4.CC List
@@ -578,7 +584,7 @@ namespace BizHRMS.Transactions
                     {
                         ret = LAB.UpdateLeaveStatus("2", RowId, Edit_By);
                         //string leaveId, string strRowId, string strMemberCode, string iLeaveType, string dtAppDate, string dtFrom, string dtTo, string fTotalDays, string isSpecialLeave, string isIsHalfDay, string iTotalDays, string strReason, string strFlag, string strFlagpercent, string halfdayleavemode, bool isApprovedLeaveCancelletion = false
-                        //SaveLeaveApp(leaveDetails.lea)
+                        SaveLeaveProxy(leaveDetails.Leavecode, leaveDetails.ROW_ID, leaveDetails.MEM_CODE, leaveDetails.Leavecode, leaveDetails.APP_DATE, leaveDetails.FROM_DATE, leaveDetails.TO_DATE, leaveDetails.TOT_DAY.ToString(), leaveDetails.SPECIAL_LEAVE.ToString(), leaveDetails.HALF_DAY_LEAVE.ToString(), leaveDetails.TOT_DAY.ToString(), leaveDetails.REASON, "", "", leaveDetails.HALF_DAY_LEAVE_MODE, true);
                     }
                 }
                 else

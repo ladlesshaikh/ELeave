@@ -36,4 +36,3 @@ D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\Interop.WinHttp.dll
 D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\ELeave.csproj.ResolveComReference.cache
 D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\BizHRMS.dll
 D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\BizHRMS.pdb
-D:\Data\Projects\Pilot\ELeave\Code\obj\Debug\ELeave.csprojResolveAssemblyReference.cache
